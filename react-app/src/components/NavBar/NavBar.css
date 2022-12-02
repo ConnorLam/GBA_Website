@@ -83,16 +83,9 @@
     z-index: 1;
 }
 
-.dropdown-welcome {
-    padding: 5%;
-}
-
 .dropdown-info {
-    /* margin: 1% 0%; */
-    /* text-decoration: none; */
     padding: 5%;
     display: flex;
-    /* color: black; */
 }
 
 .dropdown-user{
