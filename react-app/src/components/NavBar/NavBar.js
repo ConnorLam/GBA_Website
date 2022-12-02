@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
 import { useSelector } from 'react-redux';
+import gba_icon from '../../assets/favicon_io (1)/favicon-32x32.png'
 
 const NavBar = () => {
 
@@ -30,7 +31,12 @@ const NavBar = () => {
       <div>
         <div>
           <NavLink to='/' exact={true} activeClassName='active'>
-            GBA
+            <div>
+              {/* <span>
+                <img alt='' src={gba_icon}/>
+              </span> */}
+              GBA
+            </div>
           </NavLink>
         </div>
       </div>
