@@ -1,0 +1,128 @@
+.whole-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.home-button {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    margin-right: 15px;
+    color: rgb(160, 160, 160);
+}
+
+.burger-icon {
+    cursor: pointer;
+}
+
+.login-signup {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .login-signup-link {
+    margin-left: 15px;
+    font-size: large;
+    background-color: rgba(224, 7, 7, 1);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+/* .login-signup-link>a {
+    color: white;
+} */
+
+
+/* .login-signup-link:hover {
+    background-color: rgb(255, 14, 14);
+} */
+
+/* .navbar-spacer {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(220, 220, 220);
+} */
+
+.profile-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.drop-down {
+    position: absolute;
+    /* left: 900px; */
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .2);
+    /* margin-right: 5%; */
+    margin-top: 10px;
+    background-color: white;
+    width: 125px;
+    height: 100px;
+    right: 5%;
+    /* padding: 0px 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown-welcome {
+    padding: 5%;
+}
+
+.dropdown-info {
+    /* margin: 1% 0%; */
+    /* text-decoration: none; */
+    padding: 5%;
+    display: flex;
+    /* color: black; */
+}
+
+.dropdown-user{
+    padding: 5%;
+    display: flex;
+    border-bottom: solid 1px black;
+}
+
+.dropdown-info:hover {
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.home-button-div {
+    display: flex;
+    align-items: center;
+}
+
+.favicon-home {
+    margin-right: 10px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+}

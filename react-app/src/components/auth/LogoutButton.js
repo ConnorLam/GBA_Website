@@ -8,7 +8,13 @@ const LogoutButton = () => {
     await dispatch(logout());
   };
 
-  return <button onClick={onLogout}>Logout</button>;
+  return (
+    <div style={{ width: "100%", height: "100%" }}>
+      <div onClick={onLogout}>
+        Logout
+      </div>
+    </div>
+  );
 };
 
 export default LogoutButton;

@@ -26,6 +26,16 @@ const LoginForm = () => {
     setPassword(e.target.value);
   };
 
+  const handleDemo = async (e) => {
+    e.preventDefault();
+    const demoEmail = "demo@aa.io";
+    const demoPassword = "password";
+    const data = await dispatch(login(demoEmail, demoPassword));
+    if (data) {
+      setErrors(data);
+    }
+  };
+
   if (user) {
     return <Redirect to='/' />;
   }
@@ -38,25 +48,28 @@ const LoginForm = () => {
         ))}
       </div>
       <div>
-        <label htmlFor='email'>Email</label>
+        <label htmlFor="email">Email</label>
         <input
-          name='email'
-          type='text'
-          placeholder='Email'
+          name="email"
+          type="text"
+          placeholder="Email"
           value={email}
           onChange={updateEmail}
         />
       </div>
       <div>
-        <label htmlFor='password'>Password</label>
+        <label htmlFor="password">Password</label>
         <input
-          name='password'
-          type='password'
-          placeholder='Password'
+          name="password"
+          type="password"
+          placeholder="Password"
           value={password}
           onChange={updatePassword}
         />
-        <button type='submit'>Login</button>
+        <div>
+          <button type="submit">Login</button>
+          <button onClick={handleDemo}>Login as Demo User</button>
+        </div>
       </div>
     </form>
   );
