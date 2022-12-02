@@ -25,8 +25,6 @@ const NavBar = () => {
   } else {
     session = (
      <div className="nav-right">
-       <NavLink className="navlink" to="/upload-video" exact={true}>
-       </NavLink>
        <div>
          <ProfileButton user={user} />
        </div>
@@ -35,18 +33,16 @@ const NavBar = () => {
   }
 
   return (
-    <nav>
-      <div>
-        <div>
-          <NavLink to='/' exact={true} activeClassName='active'>
-            <div>
+    <nav className='whole-nav'>
+      <div className='home-button'>
+          <NavLink to='/' exact={true} activeClassName='active' className='navlink'>
+            <div className='home-button-div'>
               {/* <span>
                 <img alt='' src={gba_icon}/>
               </span> */}
               GBA
             </div>
           </NavLink>
-        </div>
       </div>
       {session}
     </nav>
