@@ -95,6 +95,12 @@
     /* color: black; */
 }
 
+.dropdown-user{
+    padding: 5%;
+    display: flex;
+    border-bottom: solid 1px black;
+}
+
 .dropdown-info:hover {
     text-decoration: none;
     background-color: rgb(240, 240, 240);

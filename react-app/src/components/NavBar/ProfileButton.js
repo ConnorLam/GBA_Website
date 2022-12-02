@@ -40,7 +40,7 @@ const ProfileButton = ({ user }) => {
             </div>
             {showMenu && (
                 <div className="drop-down">
-                        <div className="dropdown-info">
+                        <div className="dropdown-user">
                             <span><i className="fa-regular fa-user logo"></i></span>
                             {user.firstName} {user.lastName}
                         </div>
