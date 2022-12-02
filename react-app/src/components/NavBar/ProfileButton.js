@@ -13,6 +13,7 @@ const ProfileButton = ({ user }) => {
   function toggleMenu(e) {
     setShowMenu((current) => !current);
   }
+  console.log(user)
 
   useEffect(() => {
     const closeMenu = () => {
@@ -39,13 +40,11 @@ const ProfileButton = ({ user }) => {
             </div>
             {showMenu && (
                 <div className="drop-down">
-                    {/* <NavLink className='navlink' to={`/users/${user.id}`} exact={true}>
                         <div className="dropdown-info">
                             <span><i className="fa-regular fa-user logo"></i></span>
-                            Your Videos
+                            {user.firstName} {user.lastName}
                         </div>
-                    </NavLink>
-                    <NavLink className='navlink' to='/upload-video' exact={true}>
+                    {/* <NavLink className='navlink' to='/upload-video' exact={true}>
                         <div className="dropdown-info">
                             <span><i className="fa-solid fa-square-plus logo"></i></span>
                             Upload Video
