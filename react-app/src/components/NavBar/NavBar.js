@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
 import { useSelector } from 'react-redux';
 import gba_icon from '../../assets/favicon_io (1)/favicon-32x32.png'
+import './NavBar.css'
+import ProfileButton from './ProfileButton';
 
 const NavBar = () => {
 
@@ -21,9 +23,15 @@ const NavBar = () => {
       </div>
     );
   } else {
-    // session = (
-     
-    // );
+    session = (
+     <div className="nav-right">
+       <NavLink className="navlink" to="/upload-video" exact={true}>
+       </NavLink>
+       <div>
+         <ProfileButton user={user} />
+       </div>
+     </div>
+    );
   }
 
   return (
@@ -40,6 +48,7 @@ const NavBar = () => {
           </NavLink>
         </div>
       </div>
+      {session}
     </nav>
   );
 }
