@@ -1,0 +1,20 @@
+#splash{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    width: 100%;
+    /* min-height: 100vh; */
+    /* background-repeat: no-repeat, repeat; */
+    height: 100vh;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    /* background: url(images/bg.jpg) no-repeat center center fixed; */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
