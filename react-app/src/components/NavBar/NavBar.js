@@ -53,10 +53,10 @@ const NavBar = () => {
       </nav>
       <div className='whole-bottom-nav' id={location.pathname === '/login' || location.pathname === '/sign-up' ? 'display-none' : null}>
         <NavLink to='/training' activeClassName='active' className='navlink login-signup-link'>Training</NavLink>
-        <NavLink to='/competition' activeClassName='active' className='navlink login-signup-link'>Competition</NavLink>
         <NavLink to='/camp' activeClassName='active' className='navlink login-signup-link'>Camp</NavLink>
-        <NavLink to='/contact' activeClassName='active' className='navlink login-signup-link'>Contact Us</NavLink>
+        <NavLink to='/competition' activeClassName='active' className='navlink login-signup-link'>Competition</NavLink>
         <NavLink to='/gallery' activeClassName='active' className='navlink login-signup-link'>Photos</NavLink>
+        <NavLink to='/contact' activeClassName='active' className='navlink login-signup-link'>Contact Us</NavLink>
       </div>
     </>
   );

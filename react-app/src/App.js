@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash/Splash';
 import Auth from './components/auth/Auth';
+import Training from './components/Training/Training';
 import { authenticate } from './store/session';
 import './index.css'
 
@@ -37,7 +38,7 @@ function App() {
             <SignUpForm />
           </Route>
           <Route path='/training' exact={true}>
-            
+            <Training />
           </Route>
           <Route path='/competition' exact={true}>
 
