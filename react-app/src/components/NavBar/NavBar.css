@@ -5,8 +5,8 @@
     box-sizing: border-box;
     align-items: center;
     padding: 0% 5%;
-    background-color: #202124;
-
+    background-color: #121212;
+    border-bottom: solid 1px #373636;
 }
 
 .home-button {
@@ -28,15 +28,23 @@
     display: flex;
     flex-direction: row;
     color: white;
+    width: 13%;
+    justify-content: space-between;
 }
 
-/* .login-signup-link {
-    margin-left: 15px;
+.login-signup-link {
+    /* margin-left: 15px; */
     font-size: large;
-    background-color: rgba(224, 7, 7, 1);
+    /* background-color: rgba(224, 7, 7, 1); */
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* .ls-nav{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 } */
 
 /* .login-signup-link>a {
@@ -44,9 +52,9 @@
 } */
 
 
-/* .login-signup-link:hover {
-    background-color: rgb(255, 14, 14);
-} */
+.login-signup-link:hover {
+    background-color: rgb(56, 56, 56);
+}
 
 /* .navbar-spacer {
     box-sizing: border-box;
@@ -54,8 +62,8 @@
 } */
 
 .profile-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -97,7 +105,7 @@
 .dropdown-user{
     padding: 5%;
     display: flex;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px rgb(56, 56, 56);
     color: white;
 }
 
@@ -111,6 +119,7 @@
     display: flex;
     color: white;
     align-items: center;
+    font-size: 40px;
 }
 
 .favicon-home {
