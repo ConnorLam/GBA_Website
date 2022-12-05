@@ -11,10 +11,64 @@ const Training = () => {
                 always motivated and encouraged to train to their best ability.
             </div>
             <div className='schedule'>
-                <div className='row1'>
-                    
+                <div className='row1 white'>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Sun
+                        </div>
+                        <div className='times'>
+                            --
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Mon
+                        </div>
+                        <div className='times'>
+                            4-6 PM
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Tues
+                        </div>
+                        <div className='times'>
+                            --
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Wed
+                        </div>
+                        <div className='times'>
+                            4-6 PM
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Thurs
+                        </div>
+                        <div className='times'>
+                            --
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Fri
+                        </div>
+                        <div className='times'>
+                            4-6 PM
+                        </div>
+                    </div>
+                    <div className='each-column'>
+                        <div className='days'>
+                            Sat
+                        </div>
+                        <div className='times'>
+                            --
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     )

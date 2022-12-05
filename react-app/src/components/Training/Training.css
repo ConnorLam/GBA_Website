@@ -1,6 +1,34 @@
+.training-page{
+    padding: 0% 10%;
+}
+
 .training-desc{
-    padding: 0% 20%;
     padding-top: 10px;
-    font-size: large;
-    
+    font-size: large;    
+}
+
+.schedule{
+    display: flex;
+    justify-content: center;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+}
+
+.each-column{
+    width: 150px;
+    /* padding-right: 98px; */
+    padding-left: 2px;
+    border: solid 1px white;
+}
+
+.times{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    padding-top: 10px;
 }
