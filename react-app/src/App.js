@@ -13,6 +13,7 @@ import Competition from './components/Competition/Competition';
 import Contact from './components/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import Coaches from './components/Coaches/Coaches';
+import ThankYou from './components/Thank-You-Email/ThankYou';
 import { authenticate } from './store/session';
 import './index.css'
 
@@ -59,6 +60,9 @@ function App() {
           </Route>
           <Route path='/coaches' exact={true}>
             <Coaches />
+          </Route>
+          <Route path={'/thankyou'} exact={true}>
+            <ThankYou />
           </Route>
           <Route path='/' exact={true} >
             <Splash />

@@ -1,8 +1,17 @@
 import './Contact.css'
 import arena from '../../assets/gba_photos/Arena.webp'
+import { NavLink, useHistory } from 'react-router-dom'
+
 
 
 const Contact = () => {
+    const history = useHistory()
+
+    // const onSubmit = (e) => {
+    //     e.preventDefault()
+    //     alert('Email has been sent')
+    //     history.push('/')
+    // }
 
     return (
         <div className="main-page">
@@ -15,7 +24,7 @@ const Contact = () => {
                     <form action="https://formsubmit.co/connorlam03@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false"></input>
                         <input type="hidden" name="_subject" value="GBA website"></input>
-                        {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
+                        <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
                         <input type="email" name="email" placeholder="Email Address" required></input>
                         <input type="text" name="name" placeholder='Name' required/>
                         <textarea className='message-area' type="text" name="message" placeholder='Write message here' required/>
