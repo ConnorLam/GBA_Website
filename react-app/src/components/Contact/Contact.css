@@ -1,0 +1,22 @@
+.email-submit{
+    background-color: #3d424a;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 15em;
+    transition: .5s;
+}
+
+.email-submit-div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.contact-body{
+    display: flex;
+}
