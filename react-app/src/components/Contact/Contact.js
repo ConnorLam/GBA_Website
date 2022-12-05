@@ -57,9 +57,11 @@ const Contact = () => {
                     <div className='white location'>
                         <h2>Location</h2>
                         <img className='arena-picture' src={arena} alt=''/>
-                        <h2>
-                            2780 S Reservoir St, Pomona, CA 91766
-                        </h2>
+                        <a target='_blank' rel='noreferrer' className='navlink-blue' href='http://maps.google.com/?q=2780 S Reservoir St, Pomona, CA 91766'>
+                            <h2>
+                                2780 S Reservoir St, Pomona, CA 91766
+                            </h2>
+                        </a>
                     </div>
                 </div>
             </div>
