@@ -36,6 +36,21 @@ function App() {
           <Route path='/sign-up' exact={true}>
             <SignUpForm />
           </Route>
+          <Route path='/training' exact={true}>
+            
+          </Route>
+          <Route path='/competition' exact={true}>
+
+          </Route>
+          <Route path='/camp' exact={true}>
+
+          </Route>
+          <Route path='/contact' exact={true}>
+
+          </Route>
+          <Route path='/gallery' exact={true}>
+
+          </Route>
           <Route path='/' exact={true} >
             <Splash />
           </Route>

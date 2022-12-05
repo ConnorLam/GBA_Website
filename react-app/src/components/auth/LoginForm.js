@@ -80,7 +80,7 @@ const LoginForm = () => {
               <button className='actual-login' onClick={handleDemo}>Login as Demo User</button>
             </div>
             <div className='login-signup-question'>
-                  Don't have an account?&nbsp;<span><NavLink className='ls-link' to={'/sign-up'}>Sign up!</NavLink></span>
+                  Don't have an account?&nbsp;<span><NavLink className='ls-link' to={'/sign-up'}>Sign Up!</NavLink></span>
             </div>
           </div>
         </form>
