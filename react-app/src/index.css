@@ -1,15 +1,45 @@
 /* TODO Add site wide styles */
-.page{
+/* .page{
     margin: 0% 5%;
-}
+} */
 
 .navlink {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 body{
     margin: 0;
     min-height: 100vh;
     height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+/* body {
+    min-height: 100%;
+} */
+input {
+    width: 100%;
+    height: 55;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #222222;
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(176, 173, 173);
+}
+
+.white{
+    color: white;
 }

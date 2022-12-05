@@ -14,11 +14,11 @@ const NavBar = () => {
   if (!user) {
     session = (
       <div className='login-signup'>
-        <div className='login-signup-link login'>
-          <NavLink className='navlink' to='/login' exact={true}>Log In</NavLink>
+        <div className='login'>
+          <NavLink className='navlink login-signup-link' to='/login' exact={true}>Log In</NavLink>
         </div>
-        <div className='login-signup-link signup'>
-          <NavLink className='navlink' to='/sign-up' exact={true}>Sign Up</NavLink>
+        <div className='signup'>
+          <NavLink className='navlink login-signup-link' to='/sign-up' exact={true}>Sign Up</NavLink>
         </div>
       </div>
     );
