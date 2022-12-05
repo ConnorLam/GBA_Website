@@ -7,6 +7,8 @@ import './Splash.css'
 import splash1 from '../../assets/gba_photos/gba_splash.jpeg'
 import splash2 from '../../assets/gba_photos/gba_splash2.jpeg'
 import splash3 from '../../assets/gba_photos/gba_splash4.jpeg'
+import tony from '../../assets/gba_photos/tony.jpeg'
+
 
 const images = [
   splash1,
@@ -33,18 +35,31 @@ const Splash = () => {
     }, [])
 
     return (
-      <div
-        id="splash"
-        className="splash-main"
-        style={{
-          backgroundImage: `url(${images[splashNum]})`,
-        }}
-      >
-        {/* <img src={images[splashNum]} alt=''/> */}
-        {/* <div>
-          <h1>Global Badminton Academy</h1>
-        </div> */}
-      </div>
+    //   <div
+    //     id="splash"
+    //     className="splash-main"
+    //     style={{
+    //       backgroundImage: `url(${images[splashNum]})`,
+    //     }}
+    //   >
+    //     {/* <img src={images[splashNum]} alt=''/> */}
+    //     {/* <div>
+    //       <h1>Global Badminton Academy</h1>
+    //     </div> */}
+    //   </div>
+    <div className="splash-wrapper">
+        <div className="splash-info">
+            <div>
+                Tony Gunawan, Olympic Gold Medalist, founded Global Badminton Academy 
+                in 2010. His mission is to share his profound knowledge in intensive training 
+                and world-class competition to as many badminton coaches and students 
+                throughout the US.
+            </div>
+        </div>
+        <div className="splash-picture">
+            <img className='picture' src={tony} alt=''/>
+        </div>
+    </div>
     );
 }
 

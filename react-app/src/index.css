@@ -13,3 +13,11 @@ body{
     min-height: 100vh;
     height: 100%;
 }
+
+html {
+    height: 100%;
+}
+
+/* body {
+    min-height: 100%;
+} */
