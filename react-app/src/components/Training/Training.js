@@ -4,7 +4,7 @@ import './Training.css'
 const Training = () => {
 
     return(
-        <div className="training-page">
+        <div className="main-page">
 
         </div>
     )

@@ -8,6 +8,10 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash/Splash';
 import Auth from './components/auth/Auth';
 import Training from './components/Training/Training';
+import Camp from './components/Camp/Camp';
+import Competition from './components/Competition/Competition';
+import Contact from './components/Contact/Contact';
+import Gallery from './components/Gallery/Gallery';
 import { authenticate } from './store/session';
 import './index.css'
 
@@ -41,16 +45,16 @@ function App() {
             <Training />
           </Route>
           <Route path='/competition' exact={true}>
-
+            <Competition />
           </Route>
           <Route path='/camp' exact={true}>
-
+            <Camp />
           </Route>
           <Route path='/contact' exact={true}>
-
+            <Contact />
           </Route>
           <Route path='/gallery' exact={true}>
-
+            <Gallery />
           </Route>
           <Route path='/' exact={true} >
             <Splash />

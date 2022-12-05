@@ -56,6 +56,7 @@ const NavBar = () => {
         <NavLink to='/camp' activeClassName='active' className='navlink login-signup-link'>Camp</NavLink>
         <NavLink to='/competition' activeClassName='active' className='navlink login-signup-link'>Competition</NavLink>
         <NavLink to='/gallery' activeClassName='active' className='navlink login-signup-link'>Photos</NavLink>
+        <NavLink to='/coaches' activeClassName='active' className='navlink login-signup-link'>Coaches</NavLink>
         <NavLink to='/contact' activeClassName='active' className='navlink login-signup-link'>Contact Us</NavLink>
       </div>
     </>
