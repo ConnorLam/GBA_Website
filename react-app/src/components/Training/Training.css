@@ -4,21 +4,3 @@
     font-size: x-large;
     
 }
-
-.questions-contact{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.form-div{
-    padding: 0% 20%;
-}
-
-.message-area{
-    height: 200px;
-}
-
-.email-submit{
-    
-}
