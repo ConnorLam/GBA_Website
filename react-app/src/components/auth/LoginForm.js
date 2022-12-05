@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { login } from '../../store/session';
+import { NavLink } from 'react-router-dom';
+import './LoginForm.css'
 
 const LoginForm = () => {
   const [errors, setErrors] = useState([]);
@@ -41,37 +43,54 @@ const LoginForm = () => {
   }
 
   return (
-    <form onSubmit={onLogin}>
-      <div>
-        {errors.map((error, ind) => (
-          <div key={ind}>{error}</div>
-        ))}
-      </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input
-          name="email"
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={updateEmail}
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={updatePassword}
-        />
-        <div>
-          <button type="submit">Login</button>
-          <button onClick={handleDemo}>Login as Demo User</button>
+    <div className='half-half'>
+      <div className='login-signup-page'>
+        <div className='login-signup-header'>
+          Log In to GBA
         </div>
+        <form onSubmit={onLogin} className='login-signup-form'>
+          <div>
+            {errors.map((error, ind) => (
+              <div className='white' key={ind}>{error}</div>
+            ))}
+          </div>
+          <div id='input-field'>
+            {/* <label htmlFor="email">Email</label> */}
+            <input
+              name="email"
+              type="text"
+              placeholder="Email"
+              value={email}
+              onChange={updateEmail}
+              required
+            />
+          </div>
+          <div id='input-field'>
+            {/* <label htmlFor="password">Password</label> */}
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={updatePassword}
+              required
+            />
+            <div className='login-buttons'>
+              <button className='actual-login' type="submit">Login</button>
+              <button className='actual-login' onClick={handleDemo}>Login as Demo User</button>
+            </div>
+            <div className='login-signup-question'>
+                  Don't have an account?&nbsp;<span><NavLink className='ls-link' to={'/sign-up'}>Sign up!</NavLink></span>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
+
+      {/* <div className='white login-pic'>
+        <p className='white'>
+        </p>
+      </div> */}
+    </div>
   );
 };
 

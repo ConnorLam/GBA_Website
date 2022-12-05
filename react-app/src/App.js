@@ -6,6 +6,7 @@ import SignUpForm from './components/auth/SignUpForm';
 import NavBar from './components/NavBar/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash/Splash';
+import Auth from './components/auth/Auth';
 import { authenticate } from './store/session';
 import './index.css'
 

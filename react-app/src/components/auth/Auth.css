@@ -1,0 +1,15 @@
+.whole-ls-form{
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.login{
+    width: 50%;
+}
+
+.signup{
+    width: 50%;
+}
