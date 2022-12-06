@@ -56,7 +56,7 @@ const Splash = () => {
             </div>
             <div className="coach-intro">
                 Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
-                in 2010. His mission is to share his profound knowledge in intensive training 
+                in 2010. His mission is to share his profound knowledge through intensive training 
                 and world-class competition to as many badminton coaches and students 
                 throughout the US.
             </div>

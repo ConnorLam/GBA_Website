@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { Redirect } from 'react-router-dom';
+import { NavLink, Redirect } from 'react-router-dom';
 import { signUp } from '../../store/session';
 
 const SignUpForm = () => {
@@ -11,11 +11,21 @@ const SignUpForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
+  const [hasSubmitted, setHasSubmitted] = useState(false)
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    let formErrors = []
+    if (repeatPassword !== password) formErrors.push('Passwords do not match')
+
+    setErrors(formErrors)
+  }, [repeatPassword, password])
+
+
   const onSignUp = async (e) => {
     e.preventDefault();
+    setHasSubmitted(true)
     if (password === repeatPassword) {
       const data = await dispatch(signUp(firstName, lastName, username, email, password));
       if (data) {
@@ -60,7 +70,7 @@ const SignUpForm = () => {
 
       <form onSubmit={onSignUp} className='login-signup-form'>
         <div>
-          {errors.map((error, ind) => (
+          {hasSubmitted && errors.map((error, ind) => (
             <div className='white' key={ind}>{error}</div>
           ))}
         </div>
@@ -130,9 +140,12 @@ const SignUpForm = () => {
             value={repeatPassword}
             required={true}
           ></input>
-        </div>
-        <div id='input-field' className='login-buttons'>
-          <button className='actual-login' type='submit'>Sign Up</button>
+          <div className='login-buttons'>
+            <button className='actual-login' type='submit'>Sign Up</button>
+          </div>
+          <div className='login-signup-question'>
+              Already have an account?&nbsp;<span><NavLink className='ls-link' to='/login'>Log In!</NavLink></span>
+          </div>
         </div>
       </form>
     </div>

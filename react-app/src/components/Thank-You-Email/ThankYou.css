@@ -1,0 +1,11 @@
+.navlink-blue{
+    /* text-decoration: none; */
+    color: #235891;
+}
+
+.email-success{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}

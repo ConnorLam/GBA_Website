@@ -36,6 +36,8 @@ body {
     min-height: 100vh;
     width: 100%;
     overscroll-behavior: none;
+    padding-bottom: 5px;
+    background-color: #121212;
 }
 
 .splash-info{
@@ -57,9 +59,9 @@ body {
 }
 
 .coach-intro{
-    font-size: larger;
+    font-size: x-large;
 }
 
 .x-large-font{
-    font-size: x-large;
+    font-size: xx-large;
 }

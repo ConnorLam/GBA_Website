@@ -1,0 +1,96 @@
+.message-area {
+    height: 200px;
+}
+
+.form-div {
+    padding: 0% 5%;
+    width: 50%;
+}
+
+.questions-contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.email-us{
+    display: flex;
+    justify-content: center;
+}
+
+.other-info{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 3px; */
+}
+
+.email-submit{
+    background-color: #3d424a;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 15em;
+    transition: .5s;
+}
+
+.email-submit-div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+
+.contact-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-links{
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+.label-contact{
+    font-size: xx-large;
+}
+
+.other-info-div{
+    width: 50%;
+    padding-left: 5%;
+}
+
+.insta-facebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.actual-link{
+    margin-right: 30px;
+}
+
+.spacer{
+    height: 100vh;
+    border: solid 1px #373636;
+}
+
+.arena-picture{
+    height: 150px;
+    width: 300px;
+}
+
+.location{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: solid 1px white;
+    margin-right: 5%;
+}

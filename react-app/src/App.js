@@ -7,6 +7,13 @@ import NavBar from './components/NavBar/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Splash from './components/Splash/Splash';
 import Auth from './components/auth/Auth';
+import Training from './components/Training/Training';
+import Camp from './components/Camp/Camp';
+import Competition from './components/Competition/Competition';
+import Contact from './components/Contact/Contact';
+import Gallery from './components/Gallery/Gallery';
+import Coaches from './components/Coaches/Coaches';
+import ThankYou from './components/Thank-You-Email/ThankYou';
 import { authenticate } from './store/session';
 import './index.css'
 
@@ -35,6 +42,27 @@ function App() {
           </Route>
           <Route path='/sign-up' exact={true}>
             <SignUpForm />
+          </Route>
+          <Route path='/training' exact={true}>
+            <Training />
+          </Route>
+          <Route path='/competition' exact={true}>
+            <Competition />
+          </Route>
+          <Route path='/camp' exact={true}>
+            <Camp />
+          </Route>
+          <Route path='/contact' exact={true}>
+            <Contact />
+          </Route>
+          <Route path='/gallery' exact={true}>
+            <Gallery />
+          </Route>
+          <Route path='/coaches' exact={true}>
+            <Coaches />
+          </Route>
+          <Route path={'/thankyou'} exact={true}>
+            <ThankYou />
           </Route>
           <Route path='/' exact={true} >
             <Splash />
