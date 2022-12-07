@@ -36,6 +36,15 @@ const Contact = () => {
                 <div className='spacer'></div>
                 <div className='other-info-div'>
                     <h2 className='white other-info'>Other Info</h2>
+                    <div className='white location'>
+                        <h2>Location</h2>
+                        <img className='arena-picture' src={arena} alt=''/>
+                        <a target='_blank' rel='noreferrer' className='navlink-blue' href='http://maps.google.com/?q=2780 S Reservoir St, Pomona, CA 91766'>
+                            <h2>
+                                2780 S Reservoir St, Pomona, CA 91766
+                            </h2>
+                        </a>
+                    </div>
                     <div className='insta-facebook'>
                         <div className='actual-link'>
                             <a className='white navlink contact-links' rel='noreferrer' target='_blank' href='https://www.instagram.com/globalbadmintonacademy/'>
@@ -53,15 +62,6 @@ const Contact = () => {
                                 </span>
                             </a>
                         </div>
-                    </div>
-                    <div className='white location'>
-                        <h2>Location</h2>
-                        <img className='arena-picture' src={arena} alt=''/>
-                        <a target='_blank' rel='noreferrer' className='navlink-blue' href='http://maps.google.com/?q=2780 S Reservoir St, Pomona, CA 91766'>
-                            <h2>
-                                2780 S Reservoir St, Pomona, CA 91766
-                            </h2>
-                        </a>
                     </div>
                 </div>
             </div>

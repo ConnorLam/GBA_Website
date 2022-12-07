@@ -44,12 +44,12 @@
     /* border: solid 1px red; */
 }
 
-/* .training-actual-photo{
-    height: 300px;
+.training-actual-photo{
+    height: 200px;
     width: 500px;
     object-fit: contain;
-    border: solid 1px red;
-} */
+    /* border: solid 1px red; */
+}
 
 .whole-schedule{
     margin-bottom: 50px;

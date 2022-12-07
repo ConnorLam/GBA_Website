@@ -23,9 +23,9 @@ const Training = () => {
                             fundamentals, rules, and develop a love for badminton!
                         </div>
                     </div>
-                    {/* <div className='training-photo'>
+                    <div className='training-photo'>
                         <img className='training-actual-photo' src={littleChamp} alt=''/>
-                    </div> */}
+                    </div>
                 </div>
                 <div className='schedule'>
                     <div className='row1 white'>
