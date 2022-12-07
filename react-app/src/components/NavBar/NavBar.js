@@ -6,13 +6,14 @@ import gba_icon from '../../assets/favicon_io (1)/favicon-32x32.png'
 import './NavBar.css'
 import ProfileButton from './ProfileButton';
 import { useLocation } from 'react-router-dom';
+import gba_logo from '../../assets/gba_photos/gba_logo.gif'
 
 const NavBar = () => {
 
   const user = useSelector(state => state.session.user)
   // console.log(user)
   const location = useLocation()
-  console.log(location)
+  // console.log(location)
 
   let session;
   if (!user) {
@@ -45,7 +46,8 @@ const NavBar = () => {
                 {/* <span>
                   <img alt='' src={gba_icon}/>
                 </span> */}
-                GBA
+                {/* <img src={gba_logo} alt=''/> */}
+                GBA 🏸
               </div>
             </NavLink>
         </div>

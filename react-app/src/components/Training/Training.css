@@ -32,3 +32,25 @@
     font-size: 25px;
     padding-top: 10px;
 }
+
+.header-section{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.schedule-header{
+    /* height: 300px;
+    width: 700px; */
+    /* border: solid 1px red; */
+}
+
+/* .training-actual-photo{
+    height: 300px;
+    width: 500px;
+    object-fit: contain;
+    border: solid 1px red;
+} */
+
+.whole-schedule{
+    margin-bottom: 50px;
+}
