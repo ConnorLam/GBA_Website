@@ -12,13 +12,13 @@ const Training = () => {
                 always motivated and encouraged to train to their best ability.
             </div>
 
-            <div className='whole-schedule'>
+            <div className='whole-schedule-first'>
                 <div className='white header-section'>
                     <div className='schedule-header'>
                         <h3>
                             LITTLE CHAMPION
                         </h3>
-                        <div>
+                        <div className='grey'>
                             Little Champion is our program for young players to learn 
                             fundamentals, rules, and develop a love for badminton!
                         </div>
@@ -89,7 +89,7 @@ const Training = () => {
                 </div>
             </div>
             <div className='white'>
-                Intermediate & HighSchool
+                INTERMEDIATE & HIGHSCHOOL
             </div>
             <div className='schedule'>
                 <div className='row1 white'>

@@ -4,7 +4,8 @@
 
 .training-desc{
     padding-top: 10px;
-    font-size: large;    
+    font-size: large;  
+    margin-bottom: 50px;  
 }
 
 .schedule{
@@ -51,6 +52,19 @@
     /* border: solid 1px red; */
 }
 
-.whole-schedule{
+.whole-schedule-first{
     margin-bottom: 50px;
+    border-bottom: solid 1px #373636;
+    padding-bottom: 30px;
+}
+
+#parallelogram {
+    width: 200px;
+    height: 150px;
+    transform: skew(20deg);
+    background: rgb(69, 69, 69);
+}
+
+.grey{
+    color: #8D96A3;
 }
