@@ -42,3 +42,15 @@
     width: 100%;
     object-fit: cover;
 }
+
+#tony{
+    object-position: 100% 0%;
+}
+
+#eric{
+    object-position: 100% 0%;
+}
+
+#megumi{
+    /* object-position: 100% 0%; */
+}
