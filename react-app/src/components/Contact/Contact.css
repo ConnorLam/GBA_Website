@@ -10,8 +10,8 @@
 .questions-contact {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 40px;
 }
 
 .email-us{
@@ -22,7 +22,7 @@
 .other-info{
     display: flex;
     justify-content: center;
-    /* margin-bottom: 3px; */
+    margin-bottom: 26px;
 }
 
 .email-submit{
@@ -93,4 +93,5 @@
     margin-top: 20px;
     border: solid 1px white;
     margin-right: 5%;
+    margin-bottom: 20px;
 }

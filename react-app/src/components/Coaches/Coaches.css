@@ -1,0 +1,56 @@
+.coach-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.coaches-page{
+    padding: 0% 5%;
+}
+
+.coaches-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.each-coach{
+    height: 450px;
+    width: 300px;
+    border: solid 1px white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.coach-name{
+    display: flex;
+    justify-content: center;
+}
+
+.coach-pic-wrapper{
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px white; */
+    margin: 0px 20px;
+    height: 250px;
+    /* height: 200px;
+    width: 200px; */
+}
+
+.coach-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#tony{
+    object-position: 100% 0%;
+}
+
+#eric{
+    object-position: 100% 0%;
+}
+
+#megumi{
+    /* object-position: 100% 0%; */
+}

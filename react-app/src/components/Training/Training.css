@@ -3,13 +3,15 @@
 }
 
 .training-desc{
-    padding-top: 10px;
-    font-size: large;    
+    padding-top: 40px;
+    font-size: large;  
+    margin-bottom: 50px;  
 }
 
 .schedule{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-left: 100px; */
 }
 
 .row1{
@@ -19,7 +21,7 @@
 }
 
 .each-column{
-    width: 150px;
+    width: 14.28%;
     /* padding-right: 98px; */
     padding-left: 2px;
     border: solid 1px white;
@@ -31,4 +33,47 @@
     width: 100%;
     font-size: 25px;
     padding-top: 10px;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.schedule-header>h3{
+    /* height: 300px;
+    width: 700px; */
+    /* border: solid 1px red; */
+    color: yellow;
+}
+
+.training-photo{
+    margin-bottom: 20px;
+}
+
+.training-actual-photo{
+    height: 200px;
+    width: 273px;
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-end;
+    /* border: solid 1px red; */
+}
+
+.whole-schedule{
+    margin-bottom: 50px;
+    border-bottom: solid 2px #373636;
+    padding-bottom: 30px;
+}
+
+#parallelogram {
+    width: 200px;
+    height: 150px;
+    transform: skew(20deg);
+    background: rgb(69, 69, 69);
+}
+
+.grey{
+    color: #8D96A3;
 }
