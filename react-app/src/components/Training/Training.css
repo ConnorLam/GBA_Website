@@ -3,14 +3,15 @@
 }
 
 .training-desc{
-    padding-top: 10px;
+    padding-top: 40px;
     font-size: large;  
     margin-bottom: 50px;  
 }
 
 .schedule{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-left: 100px; */
 }
 
 .row1{
@@ -20,7 +21,7 @@
 }
 
 .each-column{
-    width: 150px;
+    width: 14.28%;
     /* padding-right: 98px; */
     padding-left: 2px;
     border: solid 1px white;
@@ -36,25 +37,33 @@
 
 .header-section{
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
 }
 
-.schedule-header{
+
+.schedule-header>h3{
     /* height: 300px;
     width: 700px; */
     /* border: solid 1px red; */
+    color: yellow;
+}
+
+.training-photo{
+    margin-bottom: 20px;
 }
 
 .training-actual-photo{
     height: 200px;
-    width: 500px;
+    width: 273px;
     object-fit: contain;
+    display: flex;
+    justify-content: flex-end;
     /* border: solid 1px red; */
 }
 
-.whole-schedule-first{
+.whole-schedule{
     margin-bottom: 50px;
-    border-bottom: solid 1px #373636;
+    border-bottom: solid 2px #373636;
     padding-bottom: 30px;
 }
 
