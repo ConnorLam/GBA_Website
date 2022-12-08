@@ -55,7 +55,7 @@
 .training-actual-photo{
     height: 200px;
     width: 273px;
-    object-fit: contain;
+    object-fit: cover;
     display: flex;
     justify-content: flex-end;
     /* border: solid 1px red; */
