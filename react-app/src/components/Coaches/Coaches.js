@@ -1,6 +1,6 @@
 
 import './Coaches.css'
-import christian from '../../assets/gba_photos/Christian.jpeg'
+import christian from '../../assets/gba_photos/christian.jpeg'
 import tony from '../../assets/gba_photos/tony.jpeg'
 import eti from '../../assets/gba_photos/eti.jpeg'
 import kennevic from '../../assets/gba_photos/kennevic.jpeg'
@@ -41,7 +41,7 @@ const Coaches = () => {
                     <div className='each-coach'>
                         <h3 className='coach-name'>Christian Christianto</h3>
                         <div className='coach-pic-wrapper'>
-                            <img className='coach-pic' id='megumi' src={christian} alt=''/>
+                            <img className='coach-pic' id='chris' src={christian} alt=''/>
                         </div>
                         <ul>
                             <li>Fact 1</li>
@@ -63,7 +63,7 @@ const Coaches = () => {
                     <div className='each-coach'>
                         <h3 className='coach-name'>Megumi Taruno</h3>
                         <div className='coach-pic-wrapper'>
-                            <img className='coach-pic' src={megumi} alt=''/>
+                            <img className='coach-pic' id='megumi' src={megumi} alt=''/>
                         </div>
                         <ul>
                             <li>Fact 1</li>
