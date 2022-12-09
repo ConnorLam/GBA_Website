@@ -17,7 +17,7 @@ const Coaches = () => {
                 </div>
                 <div className='coaches-wrap'>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Tony Gunawan</h3>
+                        <h3 className='coach-name'>Coach Tony Gunawan</h3>
                         <div className='coach-pic-wrapper'>
                             <img id='tony' className='coach-pic' src={tony} alt=''/>
                         </div>
@@ -28,7 +28,7 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Kennevic Asuncion</h3>
+                        <h3 className='coach-name'>Coach Kennevic Asuncion</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' src={kennevic} alt=''/>
                         </div>
@@ -39,7 +39,7 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Christian Christianto</h3>
+                        <h3 className='coach-name'>Coach Christian Christianto</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' id='chris' src={christian} alt=''/>
                         </div>
@@ -50,7 +50,7 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Eric Go</h3>
+                        <h3 className='coach-name'>Coach Eric Go</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' id='eric' src={eric} alt=''/>
                         </div>
@@ -61,7 +61,7 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Megumi Taruno</h3>
+                        <h3 className='coach-name'>Coach Megumi Taruno</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' id='megumi' src={megumi} alt=''/>
                         </div>
@@ -72,7 +72,7 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Josh Hwang</h3>
+                        <h3 className='coach-name'>Coach Josh Hwang</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' src={josh} alt=''/>
                         </div>
