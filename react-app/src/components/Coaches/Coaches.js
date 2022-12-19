@@ -39,9 +39,9 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Coach Christian Christianto</h3>
+                        <h3 className='coach-name'>Coach Eric Go</h3>
                         <div className='coach-pic-wrapper'>
-                            <img className='coach-pic' id='chris' src={christian} alt=''/>
+                            <img className='coach-pic' id='eric' src={eric} alt=''/>
                         </div>
                         <ul>
                             <li>Fact 1</li>
@@ -50,9 +50,9 @@ const Coaches = () => {
                         </ul>
                     </div>
                     <div className='each-coach'>
-                        <h3 className='coach-name'>Coach Eric Go</h3>
+                        <h3 className='coach-name'>Coach Christian Christianto</h3>
                         <div className='coach-pic-wrapper'>
-                            <img className='coach-pic' id='eric' src={eric} alt=''/>
+                            <img className='coach-pic' id='chris' src={christian} alt=''/>
                         </div>
                         <ul>
                             <li>Fact 1</li>
