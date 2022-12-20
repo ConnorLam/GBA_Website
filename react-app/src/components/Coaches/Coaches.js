@@ -1,6 +1,6 @@
 
 import './Coaches.css'
-import christian from '../../assets/gba_photos/christian.jpeg'
+import christian from '../../assets/gba_photos/Christian.jpeg'
 import tony from '../../assets/gba_photos/tony.jpeg'
 import eti from '../../assets/gba_photos/eti.jpeg'
 import kennevic from '../../assets/gba_photos/kennevic.jpeg'
