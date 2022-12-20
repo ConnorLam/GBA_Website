@@ -14,6 +14,8 @@ class User(db.Model, UserMixin):
     hashed_password = db.Column(db.String(255), nullable=False)
     dark_mode = db.Column(db.Boolean, default=False)
 
+    posts = db.relationship('Post', back_populates='owner')
+
     @property
     def password(self):
         return self.hashed_password
