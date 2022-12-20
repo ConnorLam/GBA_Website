@@ -41,6 +41,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 #tony{
@@ -52,5 +53,9 @@
 }
 
 #megumi{
-    /* object-position: 100% 0%; */
+    object-position: 100% 0%;
+}
+
+#chris{
+    object-position: 100% 0%;
 }

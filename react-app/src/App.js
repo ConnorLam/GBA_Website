@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import Coaches from './components/Coaches/Coaches';
 import ThankYou from './components/Thank-You-Email/ThankYou';
+import FourOhFour from './components/fourohfour/fourohfour';
 import { authenticate } from './store/session';
 import './index.css'
 
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route path='/' exact={true} >
             <Splash />
+          </Route>
+          <Route>
+            <FourOhFour />
           </Route>
         </Switch>
       {/* </div> */}

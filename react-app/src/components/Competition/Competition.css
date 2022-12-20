@@ -1,0 +1,30 @@
+.competition-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    padding: 0% 10%;
+    padding-top: 20px;
+}
+
+.kodi-img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+.kodi-img{
+    padding-top: 20px;
+    width: 900px;
+    /* object-position: 100% 0%; */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.kodi-description{
+    font-size: large;
+}
