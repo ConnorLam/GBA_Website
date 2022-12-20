@@ -4,9 +4,23 @@
     text-align: center;
     font-size: x-large;
     padding: 0% 10%;
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+.kodi-img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    flex-direction: column;
 }
 
 .kodi-img{
+    padding-top: 20px;
+    width: 900px;
+}
+
+.kodi-description{
     
 }

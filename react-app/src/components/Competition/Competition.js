@@ -13,8 +13,13 @@ const Competition = () => {
                     If you want to be a competitive badminton player than we will do what we can
                     to bring you to the top.
                 </div>
-                <div className='kodi-img'>
-                    <img src={kodi} alt=''/>
+                <div className='kodi-img-wrapper'>
+                    <div>
+                        <img className='kodi-img'src={kodi} alt=''/>
+                    </div>
+                    <div className='grey kodi-description'>
+                        Kodi
+                    </div>
                 </div>
             </div>
         </div>
