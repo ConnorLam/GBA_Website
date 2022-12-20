@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     flex-direction: column;
 }
 
@@ -26,5 +26,6 @@
 }
 
 .kodi-description{
+    margin-top: 10px;
     font-size: large;
 }

@@ -18,7 +18,7 @@ const Competition = () => {
                         <img className='kodi-img'src={kodi} alt=''/>
                     </div>
                     <div className='grey kodi-description'>
-                        GBA Student, Kodi Lee, at the most prestigious junior tournament, the World Junior Championships.
+                        Kodi Lee, at the most prestigious junior tournament, the World Junior Championships.
                     </div>
                 </div>
             </div>
