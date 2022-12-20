@@ -19,8 +19,12 @@
 .kodi-img{
     padding-top: 20px;
     width: 900px;
+    /* object-position: 100% 0%; */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .kodi-description{
-    
+    font-size: large;
 }
