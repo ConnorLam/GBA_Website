@@ -36,3 +36,27 @@ def create_post():
         return post.to_dict()
     
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
+@post_routes.route('<int:id>', methods=['PUT'])
+@login_required
+def edit_post(id):
+    post = Post.query.get(id)
+
+    if not post:
+        return {'message': "Post could not be found", 'statusCode': 404}, 404
+
+    if post.owner_id != current_user.id:
+        return {'message': 'Forbidden', 'statusCode': 403}, 403
+
+    form = CreatePostForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    if form.validate_on_submit():
+        post.owner_id = current_user.id
+        post.description = form.description.data
+
+        db.session.commit()
+
+        return post.to_dict()
+
+    return {"errors": validation_errors_to_error_messages(form.errors)}, 401
