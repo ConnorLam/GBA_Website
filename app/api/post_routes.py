@@ -15,6 +15,24 @@ def validation_errors_to_error_messages(validation_errors):
             errorMessages.append(f'{error}')
     return errorMessages
 
+@post_routes.route('')
+def get_all_post():
+    posts = Post.query.all()
+
+    return {
+        'posts': [post.to_dict() for post in posts]
+    }
+
+@post_routes.route('/current')
+@login_required
+def get_post_of_user():
+    posts = Post.query.filter(Post.owner_id == current_user.id).all()
+
+    return {
+        'posts': [post.to_dict() for post in posts]
+    }
+
+
 @post_routes.route('', methods=['POST'])
 @login_required
 def create_post():
@@ -60,3 +78,4 @@ def edit_post(id):
         return post.to_dict()
 
     return {"errors": validation_errors_to_error_messages(form.errors)}, 401
+
