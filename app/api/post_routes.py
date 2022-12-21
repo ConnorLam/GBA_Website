@@ -79,3 +79,21 @@ def edit_post(id):
 
     return {"errors": validation_errors_to_error_messages(form.errors)}, 401
 
+@post_routes.route('<int:id>', methods=['DELETE'])
+@login_required
+def delete_post(id):
+    post = Post.query.get(id)
+
+    if not post:
+        return {'message': "Post could not be found", 'statusCode': 404}, 404
+
+    if post.owner_id != current_user.id:
+        return {'message': 'Forbidden', 'statusCode': 403}, 403
+
+    db.session.delete(post)
+    db.session.commit()
+
+    return {"message": 'Succesfully deleted', 'statusCode': 404}, 404
+
+
+
