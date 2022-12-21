@@ -32,6 +32,15 @@ def get_post_of_user():
         'posts': [post.to_dict() for post in posts]
     }
 
+@post_routes.route('/<int:id>')
+def get_post_by_id():
+    post = Post.query.get(id)
+
+    if not post:
+        return {'message': 'Post could not be found', 'statusCode': 404}, 404
+
+    return {'post': post.to_dict()}
+
 
 @post_routes.route('', methods=['POST'])
 @login_required
