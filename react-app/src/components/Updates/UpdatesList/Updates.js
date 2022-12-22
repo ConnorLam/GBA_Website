@@ -11,7 +11,7 @@ const Updates = () => {
     const [isLoaded, setIsLoaded] = useState(false)
     const posts = useSelector(state => state.posts)
     const postsArr = Object.values(posts)
-    console.log(postsArr)
+    // console.log(postsArr)
 
     useEffect(() => {
         dispatch(getPostThunk())
