@@ -13,7 +13,7 @@ import Competition from './components/Competition/Competition';
 import Contact from './components/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import Coaches from './components/Coaches/Coaches';
-import Updates from './components/Updates/Updates';
+import Updates from './components/Updates/UpdatesList/Updates';
 import ThankYou from './components/Thank-You-Email/ThankYou';
 import FourOhFour from './components/fourohfour/fourohfour';
 import { authenticate } from './store/session';
