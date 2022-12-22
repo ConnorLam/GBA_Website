@@ -48,7 +48,7 @@ const Contact = () => {
                     <div className='insta-facebook'>
                         <div className='actual-link'>
                             <a className='white navlink contact-links' rel='noreferrer' target='_blank' href='https://www.instagram.com/globalbadmintonacademy/'>
-                                <i class="fa-brands fa-instagram fa-3x"></i>&nbsp;
+                                <i className="fa-brands fa-instagram fa-3x"></i>&nbsp;
                                 <span className='label-contact'>
                                     Instagram
                                 </span>
@@ -56,7 +56,7 @@ const Contact = () => {
                         </div>
                         <div className='actual-link'>
                             <a className='white navlink contact-links' rel='noreferrer' target='_blank' href='https://www.facebook.com/GBATraining'>
-                                <i class="fa-brands fa-facebook fa-3x"></i>&nbsp;
+                                <i className="fa-brands fa-facebook fa-3x"></i>&nbsp;
                                 <span className='label-contact'>
                                     Facebook
                                 </span>
