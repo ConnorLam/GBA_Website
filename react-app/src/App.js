@@ -13,6 +13,7 @@ import Competition from './components/Competition/Competition';
 import Contact from './components/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import Coaches from './components/Coaches/Coaches';
+import Updates from './components/Updates/Updates';
 import ThankYou from './components/Thank-You-Email/ThankYou';
 import FourOhFour from './components/fourohfour/fourohfour';
 import { authenticate } from './store/session';
@@ -58,6 +59,9 @@ function App() {
           </Route>
           <Route path='/gallery' exact={true}>
             <Gallery />
+          </Route>
+          <Route path='/updates' exact={true}>
+            <Updates />
           </Route>
           <Route path='/coaches' exact={true}>
             <Coaches />
