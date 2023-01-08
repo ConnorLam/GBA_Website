@@ -51,6 +51,7 @@ const CreateUpdate = () => {
                         type='text'
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
+                        placeholder='Write your post here'
                     />
                     <button type="submit">Submit</button>
                 </div>
