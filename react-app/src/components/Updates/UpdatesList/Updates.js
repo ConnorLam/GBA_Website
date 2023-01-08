@@ -11,6 +11,8 @@ const Updates = () => {
     const [isLoaded, setIsLoaded] = useState(false)
     const posts = useSelector(state => state.posts)
     const postsArr = Object.values(posts)
+
+    const sessionUser = useSelector(state => state.session.user)
     // console.log(postsArr)
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const Updates = () => {
             <div className="white">
                 <div>
                     {postsArr.map(post => (
-                        <UpdateCard key={post.id} post={post} />
+                        <UpdateCard key={post.id} post={post} sessionUser={sessionUser}/>
                     ))}
                 </div>
             </div>

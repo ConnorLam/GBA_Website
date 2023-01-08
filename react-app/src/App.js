@@ -19,6 +19,7 @@ import ThankYou from './components/Thank-You-Email/ThankYou';
 import FourOhFour from './components/fourohfour/fourohfour';
 import { authenticate } from './store/session';
 import './index.css'
+import EditUpdate from './components/Updates/EditUpdate/EditUpdate';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route path={'/create-update'} exact={true}>
             <CreateUpdate />
+          </Route>
+          <Route path={'/edit-update'} exact={true}>
+            <EditUpdate />
           </Route>
           <Route path='/coaches' exact={true}>
             <Coaches />
