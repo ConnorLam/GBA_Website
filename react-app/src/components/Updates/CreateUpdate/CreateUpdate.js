@@ -33,12 +33,28 @@ const CreateUpdate = () => {
 
         const data = await dispatch(createPostThunk({description}))
 
+        history.push('/updates')
 
     }
 
     return (
         <div>
-
+            <div>
+                {isSubmitted && validationErrors.map((error, i) => (
+                    <div key={i}>{error}</div>
+                ))}
+            </div>
+            <form onSubmit={onSubmit}>
+                <div>
+                    <textarea 
+                        required
+                        type='text'
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                    />
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     )
 }
