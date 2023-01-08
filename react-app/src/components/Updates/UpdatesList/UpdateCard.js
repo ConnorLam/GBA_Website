@@ -1,6 +1,6 @@
+import EditUpdate from "../EditUpdate/EditUpdate";
 
-
-const UpdateCard = ({post}) => {
+const UpdateCard = ({post, sessionUser}) => {
     // console.log(post)
 
     const newDate = (post) => {
@@ -20,6 +20,9 @@ const UpdateCard = ({post}) => {
             </div>
             <div>
                 {post.description}
+            </div>
+            <div>
+                {sessionUser.id === post.owner.id ? <EditUpdate post={post}/> : null}
             </div>
         </div>
     )
