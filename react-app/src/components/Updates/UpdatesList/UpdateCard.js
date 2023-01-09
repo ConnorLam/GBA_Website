@@ -1,4 +1,5 @@
 import EditUpdate from "../EditUpdate/EditUpdate";
+import DeleteUpdate from "../DeleteUpdate/DeleteUpdate";
 
 const UpdateCard = ({post, sessionUser}) => {
     // console.log(post)
@@ -23,6 +24,9 @@ const UpdateCard = ({post, sessionUser}) => {
             </div>
             <div>
                 {sessionUser.id === post.owner.id ? <EditUpdate post={post}/> : null}
+                <div>
+                    {sessionUser.id === post.owner.id ? <DeleteUpdate post={post}/> : null}
+                </div>
             </div>
         </div>
     )

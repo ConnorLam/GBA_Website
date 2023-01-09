@@ -117,6 +117,7 @@ export const updatePostThunk = (payload) => async dispatch => {
 }
 
 export const deletePostThunk = (postId) => async dispatch => {
+    console.log('in thunk', postId)
     const res = await fetch(`/api/posts/${postId}`, 
         {
             method: 'DELETE',  
@@ -124,7 +125,6 @@ export const deletePostThunk = (postId) => async dispatch => {
     )
 
     const data = await res.json()
-
     if(res.ok){
         await dispatch(deletePostAction(postId))
     }
@@ -162,6 +162,7 @@ const postsReducer = (state = initialState, action) => {
             return newState
         }
         case(DELETE_POST): {
+            console.log(action.payload)
             delete newState[action.payload]
             return newState
         }
