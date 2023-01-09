@@ -25,7 +25,7 @@ const UpdateCard = ({post, sessionUser}) => {
             <div>
                 {sessionUser.id === post.owner.id ? <EditUpdate post={post}/> : null}
                 <div>
-                    <DeleteUpdate post={post}/>
+                    {sessionUser.id === post.owner.id ? <DeleteUpdate post={post}/> : null}
                 </div>
             </div>
         </div>

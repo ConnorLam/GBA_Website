@@ -20,6 +20,8 @@ const Updates = () => {
         .then(() => setIsLoaded(true))
     }, [dispatch])
 
+    // console.log(postsArr)
+
     return isLoaded && (
         <div className="main-page">
             <div className="white">

@@ -5,10 +5,12 @@ import { useDispatch } from "react-redux"
 
 const DeleteUpdate = ({post}) => {
 
+
     const dispatch = useDispatch()
 
     const handleDelete = async e => {
         e.preventDefault()
+        console.log("delete post", post)
 
         const data = await dispatch(deletePostThunk(post.id))
     }
@@ -17,7 +19,7 @@ const DeleteUpdate = ({post}) => {
     return (
         <div>
             <button onClick={handleDelete}>
-                hi
+                Delete
             </button>
         </div>
     )

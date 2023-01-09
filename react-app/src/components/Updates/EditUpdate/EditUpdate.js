@@ -4,7 +4,7 @@ import { useHistory, Redirect } from "react-router-dom";
 import { updatePostThunk } from "../../../store/post";
 
 const EditUpdate = ({post}) => {
-    console.log(post)
+    // console.log(post)
     return (
         <div>
 
