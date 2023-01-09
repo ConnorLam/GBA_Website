@@ -162,6 +162,7 @@ const postsReducer = (state = initialState, action) => {
             return newState
         }
         case(DELETE_POST): {
+            console.log(action.payload)
             delete newState[action.payload]
             return newState
         }
