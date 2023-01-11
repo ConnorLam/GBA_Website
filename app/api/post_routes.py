@@ -102,7 +102,7 @@ def delete_post(id):
     db.session.delete(post)
     db.session.commit()
 
-    return {"message": 'Succesfully deleted', 'statusCode': 404}, 404
+    return {"message": 'Succesfully deleted', 'statusCode': 200}, 200
 
 
 

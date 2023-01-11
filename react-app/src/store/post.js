@@ -125,6 +125,7 @@ export const deletePostThunk = (postId) => async dispatch => {
     )
 
     const data = await res.json()
+    // console.log(data)
     if(res.ok){
         await dispatch(deletePostAction(postId))
     }
@@ -162,7 +163,7 @@ const postsReducer = (state = initialState, action) => {
             return newState
         }
         case(DELETE_POST): {
-            console.log(action.payload)
+            // console.log(action.payload)
             delete newState[action.payload]
             return newState
         }
