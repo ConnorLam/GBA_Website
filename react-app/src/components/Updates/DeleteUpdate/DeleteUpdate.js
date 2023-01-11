@@ -12,7 +12,7 @@ const DeleteUpdate = ({post}) => {
 
     const handleDelete = async e => {
         e.preventDefault()
-        console.log("delete post", post)
+        // console.log("delete post", post)
 
         const data = await dispatch(deletePostThunk(post.id))
         // history.push('/')
