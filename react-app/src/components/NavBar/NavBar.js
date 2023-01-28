@@ -54,6 +54,7 @@ const NavBar = () => {
         {session}
       </nav>
       <div className='whole-bottom-nav' id={location.pathname === '/login' || location.pathname === '/sign-up' ? 'display-none' : null}>
+        <NavLink exact to='/' activeClassName='active' className='navlink login-signup-link'>Home</NavLink>
         <NavLink to='/training' activeClassName='active' className='navlink login-signup-link'>Training</NavLink>
         <NavLink to='/camp' activeClassName='active' className='navlink login-signup-link'>Camp</NavLink>
         <NavLink to='/competition' activeClassName='active' className='navlink login-signup-link'>Competition</NavLink>
