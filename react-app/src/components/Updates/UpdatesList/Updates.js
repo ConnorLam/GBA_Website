@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux'
 import { getPostThunk } from "../../../store/post";
 import UpdateCard from "./UpdateCard";
-
+import './Updates.css'
 
 
 const Updates = () => {
@@ -25,7 +25,7 @@ const Updates = () => {
     return isLoaded && (
         <div className="main-page">
             <div className="white">
-                <div>
+                <div className="all-updates">
                     {postsArr.map(post => (
                         <UpdateCard key={post.id} post={post} sessionUser={sessionUser}/>
                     ))}
