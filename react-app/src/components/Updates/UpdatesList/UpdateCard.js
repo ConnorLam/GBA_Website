@@ -15,10 +15,10 @@ const UpdateCard = ({post, sessionUser}) => {
     return (
         <div className="each-update">
             <div className="first-row-update">
-                <div>
+                <div className="name">
                     {post.owner.firstName} {post.owner.lastName}
                 </div>
-                <div>
+                <div className="date">
                     {newDate(post)}
                 </div>
             </div>

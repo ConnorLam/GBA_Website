@@ -4,6 +4,16 @@
     justify-content: space-between;
 }
 
+.name{
+    text-decoration: underline;
+    /* font-size: x-large; */
+    font-weight: bold;
+}
+
+.date{
+    color: grey;
+}
+
 .all-updates{
     display: flex;
     align-items: center;
