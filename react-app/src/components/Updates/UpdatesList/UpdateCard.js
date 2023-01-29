@@ -1,5 +1,6 @@
 import EditUpdate from "../EditUpdate/EditUpdate";
 import DeleteUpdate from "../DeleteUpdate/DeleteUpdate";
+import './Updates.css'
 
 const UpdateCard = ({post, sessionUser}) => {
     // console.log(post)
@@ -12,14 +13,16 @@ const UpdateCard = ({post, sessionUser}) => {
     }
 
     return (
-        <div>
-            <div>
-                {newDate(post)}
+        <div className="each-update">
+            <div className="first-row-update">
+                <div className="name">
+                    {post.owner.firstName} {post.owner.lastName}
+                </div>
+                <div className="date">
+                    {newDate(post)}
+                </div>
             </div>
-            <div>
-                {post.owner.firstName} {post.owner.lastName}
-            </div>
-            <div>
+            <div className="update-details">
                 {post.description}
             </div>
             <div>

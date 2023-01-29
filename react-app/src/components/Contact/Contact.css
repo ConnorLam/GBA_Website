@@ -10,8 +10,12 @@
 .questions-contact {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-bottom: 40px;
+}
+
+.questions-contact > h2{
+    margin: 0;
 }
 
 .email-us{

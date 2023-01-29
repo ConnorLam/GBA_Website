@@ -1,0 +1,41 @@
+.first-row-update{
+    display: flex;
+    /* margin-bottom: 40px; */
+    justify-content: space-between;
+}
+
+.name{
+    text-decoration: underline;
+    /* font-size: x-large; */
+    font-weight: bold;
+}
+
+.date{
+    color: grey;
+}
+
+.all-updates{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.each-update{
+    margin: 3px 0%;
+    padding: 20px;
+    width: 50%;
+    background-color: #252525;
+    border-radius: 20px;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.update-details{
+    word-wrap: break-word;
+    padding: 20px 0px;
+    /* border: solid 1px red; */
+    /* background-color: #252525; */
+}

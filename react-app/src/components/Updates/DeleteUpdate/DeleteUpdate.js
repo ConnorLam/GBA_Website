@@ -2,6 +2,7 @@ import { deletePostThunk } from "../../../store/post"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { useHistory } from "react-router-dom"
+import './DeleteUpdate.css'
 
 
 const DeleteUpdate = ({post}) => {
@@ -21,7 +22,7 @@ const DeleteUpdate = ({post}) => {
 
     return (
         <div>
-            <button onClick={handleDelete}>
+            <button className="delete-button" onClick={handleDelete}>
                 Delete
             </button>
         </div>
