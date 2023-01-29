@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom"
 import './DeleteUpdate.css'
 
 
-const DeleteUpdate = ({update}) => {
+const DeleteUpdate = ({update, setShowModal}) => {
 
 
     const dispatch = useDispatch()
@@ -18,13 +18,24 @@ const DeleteUpdate = ({update}) => {
         const data = await dispatch(deletePostThunk(update.id))
         // history.push('/')
     }
+
+    const handleClick = (e) => {
+      e.preventDefault();
+      setShowModal(false);
+    };
     
 
     return (
-        <div>
-            <button className="delete-button" onClick={handleDelete}>
-                Delete
-            </button>
+        <div className="white">
+            <h3>
+                Are you sure you would like to delete this post?
+            </h3>
+            <div className="delete-buttons-div">
+                <button className="delete-button" onClick={handleClick}>Cancel</button>
+                <button className="delete-button" onClick={handleDelete}>
+                    Delete
+                </button>
+            </div>
         </div>
     )
 }
