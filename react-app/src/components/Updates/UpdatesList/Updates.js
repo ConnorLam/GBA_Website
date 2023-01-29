@@ -10,7 +10,7 @@ const Updates = () => {
     const dispatch = useDispatch()
     const [isLoaded, setIsLoaded] = useState(false)
     const posts = useSelector(state => state.posts)
-    const postsArr = Object.values(posts)
+    const postsArr = Object.values(posts).reverse()
 
     const sessionUser = useSelector(state => state.session.user)
     // console.log(postsArr)
