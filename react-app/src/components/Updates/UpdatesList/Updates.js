@@ -21,6 +21,11 @@ const Updates = () => {
     }, [dispatch])
 
     // console.log(postsArr)
+    if(postsArr < 1){
+        return (
+            <div className="white all-updates no-post">No updates available yet</div>
+        )
+    }
 
     return isLoaded && (
         <div className="main-page">
