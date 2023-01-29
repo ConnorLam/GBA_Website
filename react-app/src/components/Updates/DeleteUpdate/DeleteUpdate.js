@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom"
 import './DeleteUpdate.css'
 
 
-const DeleteUpdate = ({post}) => {
+const DeleteUpdate = ({update}) => {
 
 
     const dispatch = useDispatch()
@@ -15,7 +15,7 @@ const DeleteUpdate = ({post}) => {
         e.preventDefault()
         // console.log("delete post", post)
 
-        const data = await dispatch(deletePostThunk(post.id))
+        const data = await dispatch(deletePostThunk(update.id))
         // history.push('/')
     }
     

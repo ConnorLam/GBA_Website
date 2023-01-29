@@ -1,5 +1,6 @@
 import EditUpdate from "../EditUpdate/EditUpdate";
 import DeleteUpdate from "../DeleteUpdate/DeleteUpdate";
+import DeleteUpdateModal from "../DeleteUpdate/DeleteUpdateModal";
 import './Updates.css'
 
 const UpdateCard = ({post, sessionUser}) => {
@@ -28,7 +29,7 @@ const UpdateCard = ({post, sessionUser}) => {
             <div>
                 {sessionUser?.id === post.owner.id ? <EditUpdate post={post}/> : null}
                 <div>
-                    {sessionUser?.id === post.owner.id ? <DeleteUpdate post={post}/> : null}
+                    {sessionUser?.id === post.owner.id ? <DeleteUpdateModal update={post}/> : null}
                 </div>
             </div>
         </div>
