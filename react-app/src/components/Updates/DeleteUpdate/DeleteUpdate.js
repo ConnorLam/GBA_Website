@@ -26,8 +26,8 @@ const DeleteUpdate = ({update, setShowModal}) => {
     
 
     return (
-        <div className="white">
-            <h3>
+        <div className="white edit-delete-modal-content">
+            <h3 className="modal-header">
                 Are you sure you would like to delete this post?
             </h3>
             <div className="delete-buttons-div">

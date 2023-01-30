@@ -41,7 +41,7 @@ const CreateUpdate = () => {
         <div>
             <div>
                 {isSubmitted && validationErrors.map((error, i) => (
-                    <div key={i}>{error}</div>
+                    <div key={i} className='white'>{error}</div>
                 ))}
             </div>
             <form onSubmit={onSubmit}>

@@ -21,9 +21,10 @@
 #modal-content {
     position: absolute;
     background-color: #252525;
-    width: 450px;
-    height: 200px;
+    width: 500px;
+    height: 450px;
     display: flex;
     justify-content: center;
     border-radius: 15px;
+    overflow-y: scroll;
 }

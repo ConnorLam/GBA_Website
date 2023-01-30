@@ -1,0 +1,14 @@
+.edit-delete-modal-content{
+    width: 80%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 3em;
+}
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

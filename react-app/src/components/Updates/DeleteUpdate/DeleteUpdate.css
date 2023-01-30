@@ -14,7 +14,7 @@
 }
 
 .delete-buttons-div{
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
