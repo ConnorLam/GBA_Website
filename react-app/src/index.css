@@ -46,6 +46,8 @@ input {
     background-color: #222222;
     color: white;
     outline: none;
+    font-family: 'Open_Sans';
+    font-size: larger;
 }
 
 textarea{
@@ -63,10 +65,13 @@ textarea{
     outline: none;
     resize: vertical;
     min-height: 100px;
+    font-family: 'Open_Sans';
+    font-size: larger;
 }
 
 ::placeholder{
     color: rgb(176, 173, 173);
+    font-size: 16px;
 }
 
 .white{
