@@ -41,6 +41,10 @@
 .update-details{
     word-wrap: break-word;
     padding: 20px 0px;
+    padding-top: 5px;
+    font-size: larger;
+    color: rgb(235, 233, 233);
+    /* line-height: 2fr; */
     /* border: solid 1px red; */
     /* background-color: #252525; */
 }
