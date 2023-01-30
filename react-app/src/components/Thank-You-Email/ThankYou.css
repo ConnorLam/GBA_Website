@@ -1,6 +1,11 @@
 .navlink-blue{
     /* text-decoration: none; */
     color: #235891;
+    /* transition: .3s; */
+}
+
+.navlink-blue:hover{
+    color: #327dcd;
 }
 
 .email-success{

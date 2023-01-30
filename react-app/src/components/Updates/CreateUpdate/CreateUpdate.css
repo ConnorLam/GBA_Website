@@ -29,4 +29,9 @@
     /* background-color: #2665FD; */
     background-color: #3D424A;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.submit-update:hover{
+    background-color: #33373e;
 }
