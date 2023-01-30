@@ -77,7 +77,7 @@ const LoginForm = () => {
             />
             <div className='login-buttons'>
               <button className='actual-login' type="submit">Login</button>
-              <button className='actual-login' onClick={handleDemo}>Login as Demo User</button>
+              {/* <button className='actual-login' onClick={handleDemo}>Login as Demo User</button> */}
             </div>
             {/* <div className='login-signup-question'>
                   Don't have an account?&nbsp;<span><NavLink className='ls-link' to={'/sign-up'}>Sign Up!</NavLink></span>

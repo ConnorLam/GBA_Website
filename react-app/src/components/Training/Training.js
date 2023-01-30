@@ -98,7 +98,8 @@ const Training = () => {
                             INTERMEDIATE & HIGHSCHOOL
                         </h3>
                         <div className='grey'>
-                            Intermediate & Highschool is our program for kids 
+                            Intermediate & Highschool is our program for kids of all levels, from middle school and up, to
+                            learn the sport and develop a likeness to badminton.
                         </div>
                     </div>
                     <div className='training-photo'>

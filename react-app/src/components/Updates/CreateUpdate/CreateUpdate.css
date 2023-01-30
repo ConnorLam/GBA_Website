@@ -35,3 +35,7 @@
 .submit-update:hover{
     background-color: #33373e;
 }
+
+.error{
+    color: red;
+}

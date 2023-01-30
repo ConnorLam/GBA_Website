@@ -26,10 +26,10 @@ const DeleteUpdate = ({update, setShowModal}) => {
     
 
     return (
-        <div className="white edit-delete-modal-content">
-            <h3 className="modal-header">
+        <div className="white delete-modal-content">
+            <h2 className="modal-header">
                 Are you sure you would like to delete this post?
-            </h3>
+            </h2>
             <div className="delete-buttons-div">
                 <button className="delete-button" onClick={handleClick}>Cancel</button>
                 <button className="delete-button" onClick={handleDelete}>

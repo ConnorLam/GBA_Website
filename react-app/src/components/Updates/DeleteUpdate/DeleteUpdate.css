@@ -2,15 +2,17 @@
     /* border: solid 1px red; */
     padding: 10px 20px;
     border-radius: 10px;
-    color: black;
+    color: white;
     cursor: pointer;
     margin-bottom: 10px;
     transition: .5s;
     font-size: large;
+    background-color: #3D424A;
+    border: none;
 }
 
 .delete-button:hover{
-    background-color: rgb(190, 190, 190);
+    background-color: #33373e;
 }
 
 .delete-buttons-div{
