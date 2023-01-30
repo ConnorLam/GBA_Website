@@ -86,6 +86,7 @@
     width: 125px;
     height: 100px;
     right: 5%;
+    padding: 10px;
     /* padding: 0px 10px; */
     display: flex;
     flex-direction: column;
