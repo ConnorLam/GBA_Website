@@ -43,3 +43,21 @@
     /* border: solid 1px red; */
     /* background-color: #252525; */
 }
+
+.delete-update-modal-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-delete-button {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.edit-delete-button:hover {
+    color: rgb(85, 85, 247);
+}
+
+.edit-button{
+    margin-right: 5px;
+}

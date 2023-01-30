@@ -8,7 +8,9 @@ const EditUpdateModal = ({post}) => {
 
     return (
         <div className="white">
-            <button onClick={() => setShowModal(true)}>Edit Update</button>
+            <div>
+                <i onClick={() => setShowModal(true)} className="fa-regular fa-pen-to-square edit-delete-button edit-button"></i>
+            </div>
             {showModal &&(
                 <Modal onClose={() => setShowModal(false)}>
                     <EditUpdate post={post} setShowModal={setShowModal}/>

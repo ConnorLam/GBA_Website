@@ -27,11 +27,9 @@ const UpdateCard = ({post, sessionUser}) => {
             <div className="update-details">
                 {post.description}
             </div>
-            <div>
+            <div className="delete-update-modal-buttons">
                 {sessionUser?.id === post.owner.id ? <EditUpdateModal post={post}/> : null}
-                <div>
-                    {sessionUser?.id === post.owner.id ? <DeleteUpdateModal update={post}/> : null}
-                </div>
+                {sessionUser?.id === post.owner.id ? <DeleteUpdateModal update={post}/> : null}
             </div>
         </div>
     )
