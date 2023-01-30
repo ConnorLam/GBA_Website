@@ -48,7 +48,7 @@ const EditUpdate = ({post, setShowModal}) => {
         <div className="white edit-delete-modal-content">
             <h3 className="modal-header">Edit your post here</h3>
             {hasSubmitted && validationErrors.map((error, i) => (
-                <div className="errors" key={i}>
+                <div className="error" key={i}>
                     <li>{error}</li>
                 </div>
             ))}
@@ -61,6 +61,7 @@ const EditUpdate = ({post, setShowModal}) => {
                         onChange={(e) =>setDescription(e.target.value)}
                         placeholder='Edit your post here'
                     />
+                    <div className="counter">{description.length}/2000</div>
                     <div className="delete-buttons-div">
                         <button className='delete-button' onClick={handleClick}>Cancel</button>
                         <button className='delete-button' type="submit">Edit</button>
