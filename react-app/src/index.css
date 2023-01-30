@@ -51,6 +51,7 @@ textarea{
     color: white;
     outline: none;
     resize: vertical;
+    min-height: 100px;
 }
 
 ::placeholder{

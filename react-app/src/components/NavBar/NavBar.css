@@ -26,7 +26,7 @@
 
 .login-signup {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     color: white;
     width: 160px;
     justify-content: space-between;

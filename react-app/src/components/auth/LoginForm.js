@@ -46,7 +46,7 @@ const LoginForm = () => {
     <div className='half-half'>
       <div className='login-signup-page'>
         <div className='login-signup-header'>
-          Log In to GBA
+          Log In to GBA (for coaches only)
         </div>
         <form onSubmit={onLogin} className='login-signup-form'>
           <div>
@@ -79,9 +79,9 @@ const LoginForm = () => {
               <button className='actual-login' type="submit">Login</button>
               <button className='actual-login' onClick={handleDemo}>Login as Demo User</button>
             </div>
-            <div className='login-signup-question'>
+            {/* <div className='login-signup-question'>
                   Don't have an account?&nbsp;<span><NavLink className='ls-link' to={'/sign-up'}>Sign Up!</NavLink></span>
-            </div>
+            </div> */}
           </div>
         </form>
       </div>
