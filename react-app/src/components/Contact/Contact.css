@@ -42,6 +42,10 @@
     transition: .5s;
 }
 
+.email-submit:hover{
+    background-color: #33373e;
+}
+
 .email-submit-div{
     /* width: 100%; */
     display: flex;

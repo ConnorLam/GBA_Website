@@ -22,9 +22,9 @@ const NavBar = () => {
         <div className='login'>
           <NavLink className='navlink login-signup-link' to='/login' exact={true}>Log In</NavLink>
         </div>
-        <div className='signup'>
+        {/* <div className='signup'>
           <NavLink className='navlink login-signup-link' to='/sign-up' exact={true}>Sign Up</NavLink>
-        </div>
+        </div> */}
       </div>
     );
   } else {

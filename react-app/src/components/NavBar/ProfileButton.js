@@ -44,12 +44,12 @@ const ProfileButton = ({ user }) => {
                             <span><i className="fa-regular fa-user logo"></i></span>
                             {user.firstName} {user.lastName}
                         </div>
-                    {/* <NavLink className='navlink' to='/upload-video' exact={true}>
-                        <div className="dropdown-info">
-                            <span><i className="fa-solid fa-square-plus logo"></i></span>
-                            Upload Video
-                        </div>
-                    </NavLink> */}
+                      <NavLink className='navlink' to='/create-update' exact={true}>
+                          <div className="dropdown-info">
+                              <span><i className="fa-solid fa-square-plus logo"></i></span>
+                              Post Update
+                          </div>
+                      </NavLink>
                         <div onClick={onLogout} className="dropdown-info">
                             <span><i className="fa-solid fa-arrow-right-from-bracket logo"></i></span>
                             <LogoutButton />

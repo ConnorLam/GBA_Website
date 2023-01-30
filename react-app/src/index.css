@@ -3,6 +3,16 @@
     margin: 0% 5%;
 } */
 
+@font-face {
+    font-family: 'Raleway-Italic';
+    src: url('./fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: 'Open_Sans';
+    src: url('./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
 .navlink {
     text-decoration: none;
     color: white;
@@ -13,6 +23,7 @@ body{
     min-height: 100%;
     height: 100%;
     background-color: #121212;
+    font-family: 'Open_Sans';
 }
 
 html {
@@ -35,6 +46,8 @@ input {
     background-color: #222222;
     color: white;
     outline: none;
+    font-family: 'Open_Sans';
+    font-size: larger;
 }
 
 textarea{
@@ -51,10 +64,14 @@ textarea{
     color: white;
     outline: none;
     resize: vertical;
+    min-height: 100px;
+    font-family: 'Open_Sans';
+    font-size: larger;
 }
 
 ::placeholder{
     color: rgb(176, 173, 173);
+    font-size: 16px;
 }
 
 .white{
@@ -75,3 +92,8 @@ img{
     user-select: none;
 }
 
+button{
+    cursor: pointer;
+    font-family: 'Open_Sans';
+    /* font-size: larger; */
+}

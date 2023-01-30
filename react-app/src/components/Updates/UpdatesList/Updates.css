@@ -14,11 +14,16 @@
     color: grey;
 }
 
+.no-post{
+    font-size: x-large;
+}
+
 .all-updates{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .each-update{
@@ -30,12 +35,34 @@
     min-height: 130px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .update-details{
     word-wrap: break-word;
     padding: 20px 0px;
+    padding-top: 5px;
+    font-size: larger;
+    color: rgb(235, 233, 233);
+    /* line-height: 2fr; */
     /* border: solid 1px red; */
     /* background-color: #252525; */
+}
+
+.delete-update-modal-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-delete-button {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.edit-delete-button:hover {
+    color: rgb(85, 85, 247);
+}
+
+.edit-button{
+    margin-right: 5px;
 }

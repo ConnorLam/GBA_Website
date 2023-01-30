@@ -26,7 +26,7 @@
 
 .login-signup {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     color: white;
     width: 160px;
     justify-content: space-between;
@@ -83,9 +83,10 @@
     /* margin-right: 5%; */
     margin-top: 10px;
     background-color: white;
-    width: 125px;
-    height: 100px;
+    width: 175px;
+    height: 150px;
     right: 5%;
+    padding: 10px;
     /* padding: 0px 10px; */
     display: flex;
     flex-direction: column;
