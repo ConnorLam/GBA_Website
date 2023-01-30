@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.create-update-page{
+    padding: 0% 10%;
+}
+
+.create-update-text-area{
+    min-height: 300px;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useHistory, Redirect } from "react-router-dom";
 import { createPostThunk } from "../../../store/post";
+import './CreateUpdate.css'
 
 const CreateUpdate = () => {
 
@@ -37,22 +38,47 @@ const CreateUpdate = () => {
 
     }
 
+    const onSubmitEnter = async e => {
+        // e.preventDefault()
+
+        setIsSubmitted(true)
+
+        if (validationErrors.length > 0) return
+
+        const data = await dispatch(createPostThunk({description}))
+
+        history.push('/updates')
+
+    }
+
+    const onEnterPress = (e) => {
+      if (e.keyCode === 13 && e.shiftKey === false) {
+        // e.preventDefault();
+        onSubmitEnter()
+      }
+    };
+
+
     return (
-        <div>
+        <div className="white create-update-page">
+            <h3 className="header">Post your updates here</h3>
             <div>
                 {isSubmitted && validationErrors.map((error, i) => (
-                    <div key={i} className='white'>{error}</div>
+                    <div key={i}>{error}</div>
                 ))}
             </div>
             <form onSubmit={onSubmit}>
                 <div>
-                    <textarea 
+                    <textarea
+                        className="create-update-text-area"
                         required
                         type='text'
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder='Write your post here'
+                        onKeyDown={onEnterPress}
                     />
+                    {/* <input type="submit" hidden /> */}
                     <button type="submit">Submit</button>
                 </div>
             </form>
