@@ -4,9 +4,29 @@
 }
 
 .create-update-page{
-    padding: 0% 10%;
+    margin: 0% 10%;
 }
 
 .create-update-text-area{
     min-height: 300px;
+}
+
+.submit-update-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    /* margin: 0% 20%; */
+}
+
+.submit-update{
+    width: 100%;
+    margin: 20px 150px;
+    padding: 10px;
+    border: none;
+    font-size: large;
+    color: white;
+    /* background-color: #2665FD; */
+    background-color: #3D424A;
+    border-radius: 10px;
 }

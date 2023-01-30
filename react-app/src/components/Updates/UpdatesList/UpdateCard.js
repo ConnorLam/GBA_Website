@@ -16,16 +16,18 @@ const UpdateCard = ({post, sessionUser}) => {
 
     return (
         <div className="each-update">
-            <div className="first-row-update">
-                <div className="name">
-                    {post.owner.firstName} {post.owner.lastName}
+            <div>
+                <div className="first-row-update">
+                    <div className="name">
+                        {post.owner.firstName} {post.owner.lastName}
+                    </div>
+                    <div className="date">
+                        {newDate(post)}
+                    </div>
                 </div>
-                <div className="date">
-                    {newDate(post)}
+                <div className="update-details">
+                    {post.description}
                 </div>
-            </div>
-            <div className="update-details">
-                {post.description}
             </div>
             <div className="delete-update-modal-buttons">
                 {sessionUser?.id === post.owner.id ? <EditUpdateModal post={post}/> : null}

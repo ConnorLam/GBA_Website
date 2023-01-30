@@ -76,10 +76,12 @@ const CreateUpdate = () => {
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder='Write your post here'
-                        onKeyDown={onEnterPress}
+                        // onKeyDown={onEnterPress}
                     />
                     {/* <input type="submit" hidden /> */}
-                    <button type="submit">Submit</button>
+                    <div className="submit-update-div">
+                        <button className="submit-update" type="submit">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
