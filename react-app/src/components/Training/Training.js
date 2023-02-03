@@ -23,7 +23,7 @@ const Training = () => {
                         </h3>
                         <div className='grey'>
                             Little Champion is our program for young players to learn 
-                            fundamentals, rules, and develop a love for badminton!
+                            fundamentals, rules, and develop a love for badminton! Book an appointment <a target='_blank' rel='noreferrer' className='navlink-blue' href='https://clients.mindbodyonline.com/ASP/su1.asp?studioid=695081&tg=&vt=&lvl=&stype=-98&view=&trn=0&page=&catid=&prodid=&date=2%2f3%2f2023&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1'>here</a>.
                         </div>
                     </div>
                     <div className='training-photo'>
@@ -99,7 +99,7 @@ const Training = () => {
                         </h3>
                         <div className='grey'>
                             Intermediate & Highschool is our program for kids of all levels, from middle school and up, to
-                            learn the sport and develop a likeness to badminton.
+                            learn the sport and develop a likeness to badminton. Book an appointment <a target='_blank' rel='noreferrer' className='navlink-blue' href='https://clients.mindbodyonline.com/ASP/su1.asp?studioid=695081&tg=&vt=&lvl=&stype=-98&view=&trn=0&page=&catid=&prodid=&date=2%2f3%2f2023&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1'>here</a>.
                         </div>
                     </div>
                     <div className='training-photo'>
