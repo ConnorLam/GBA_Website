@@ -26,5 +26,5 @@
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
