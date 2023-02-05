@@ -23,7 +23,7 @@ const NavBar = () => {
           <NavLink className='navlink login-signup-link' to='/login' exact={true}>Log In</NavLink>
         </div>
         {/* <div className='signup'>
-          <NavLink className='navlink login-signup-link' to='/sign-up' exact={true}>Sign Up</NavLink>
+          <a className='navlink login-signup-link' target='_blank' rel='noreferrer' href='https://clients.mindbodyonline.com/ASP/su1.asp?studioid=695081&tg=&vt=&lvl=&stype=-98&view=&trn=0&page=&catid=&prodid=&date=2%2f3%2f2023&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1'>SignUp</a>
         </div> */}
       </div>
     );

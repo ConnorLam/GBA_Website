@@ -59,10 +59,10 @@ const Splash = () => {
                 in 2010. His mission is to share his profound knowledge through intensive training 
                 and world-class competition to as many badminton coaches and students 
                 throughout the US.
-
+{/* 
                 <br/>
                 <br/>
-                ADD MIND BODY LINK
+                ADD MIND BODY LINK */}
             </div>
         </div>
         <div className="splash-picture">
