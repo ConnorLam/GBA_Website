@@ -10,6 +10,7 @@ import gba_logo from '../../assets/gba_photos/gba_logo.gif'
 
 const NavBar = () => {
 
+  // comment to force push to heroku
   const user = useSelector(state => state.session.user)
   // console.log(user)
   const location = useLocation()
