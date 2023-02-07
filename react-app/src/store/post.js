@@ -99,7 +99,7 @@ export const createPostThunk = (payload) => async dispatch => {
 }
 
 export const updatePostThunk = (payload) => async dispatch => {
-    console.log(payload)
+    // console.log(payload)
     const res = await fetch(`/api/posts/${payload.postId}`,
         {
             method: 'PUT',
@@ -118,7 +118,7 @@ export const updatePostThunk = (payload) => async dispatch => {
 }
 
 export const deletePostThunk = (postId) => async dispatch => {
-    console.log('in thunk', postId)
+    // console.log('in thunk', postId)
     const res = await fetch(`/api/posts/${postId}`, 
         {
             method: 'DELETE',  

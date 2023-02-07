@@ -13,7 +13,7 @@ const ProfileButton = ({ user }) => {
   function toggleMenu(e) {
     setShowMenu((current) => !current);
   }
-  console.log(user)
+  // console.log(user)
 
   useEffect(() => {
     const closeMenu = () => {
