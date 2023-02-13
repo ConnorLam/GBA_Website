@@ -1,5 +1,5 @@
 import './Competition.css'
-import kodi from '../../assets/gba_photos/kodi.jpeg'
+import kodi from '../../assets/gba_photos/kodi.jpg'
 
 
 const Competition = () => {
