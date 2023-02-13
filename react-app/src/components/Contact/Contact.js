@@ -21,10 +21,10 @@ const Contact = () => {
             <div className='contact-body'>
                 <div className='form-div'>
                     <h2 className='white email-us'>Email Us</h2>
-                    <form action="https://formsubmit.co/connorlam03@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/traininggba@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false"></input>
                         <input type="hidden" name="_subject" value="GBA website"></input>
-                        <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
+                        <input type="hidden" name="_next" value="https://globalbadmintonacademy.herokuapp.com/thankyou"></input>
                         <input type="email" name="email" placeholder="Email Address" required></input>
                         <input type="text" name="name" placeholder='Name' required/>
                         <textarea className='message-area' type="text" name="message" placeholder='Write message here' required/>
