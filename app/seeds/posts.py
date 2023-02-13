@@ -3,23 +3,23 @@ from app.models import db, Post
 def seed_posts():
     posts = [
         {
-            'owner_id': 3,
+            'owner_id': 2,
             'description': 'Hello students'
         },
         {
-            'owner_id': 3,
+            'owner_id': 2,
             'description': 'fhjasdhfjlkasfh'
         },
         {
-            'owner_id': 3,
+            'owner_id': 2,
             'description': 'safjashfjklsdhfjklasdf'
         },
         {
-            'owner_id': 3,
+            'owner_id': 2,
             'description': 'fhasdjhfjklahsfjlhasdjk'
         },
         {
-            'owner_id': 3,
+            'owner_id': 2,
             'description': 'dshajfhjklasdhfjklahsdjklfhajklsfh'
         }
 

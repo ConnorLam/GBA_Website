@@ -1,20 +1,16 @@
 """empty message
 
-Revision ID: 4c8749928fbd
+Revision ID: bc28f64e8acd
 Revises: 
-Create Date: 2023-01-27 19:21:29.723493
+Create Date: 2023-02-13 12:30:15.968357
 
 """
 from alembic import op
 import sqlalchemy as sa
 
-import os
-environment = os.getenv("FLASK_ENV")
-SCHEMA = os.environ.get("SCHEMA")
-
 
 # revision identifiers, used by Alembic.
-revision = '4c8749928fbd'
+revision = 'bc28f64e8acd'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -43,8 +39,6 @@ def upgrade():
     sa.ForeignKeyConstraint(['owner_id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE <table_name> SET SCHEMA {SCHEMA};")
     # ### end Alembic commands ###
 
 
