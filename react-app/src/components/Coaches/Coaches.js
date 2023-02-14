@@ -19,7 +19,7 @@ const Coaches = () => {
                     <div className='each-coach'>
                         <h3 className='coach-name'>Coach Tony Gunawan</h3>
                         <div className='coach-pic-wrapper'>
-                            <img id='tony' className='coach-pic' src={tony} alt='' lazy/>
+                            <img id='tony' className='coach-pic' src={tony} alt='' loading='lazy'/>
                         </div>
                         <ul>
                             <li>Fact 1</li>
