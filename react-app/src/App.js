@@ -33,7 +33,12 @@ function App() {
   }, [dispatch]);
 
   if (!loaded) {
-    return null;
+    <div>
+      <img
+        src="https://c.tenor.com/wfEN4Vd_GYsAAAAC/loading.gif"
+        alt="Loading..."
+      ></img>
+    </div>;
   }
 
   return (
