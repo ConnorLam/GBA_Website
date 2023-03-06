@@ -1,6 +1,6 @@
 
 import './Training.css'
-import littleChamp from '../../assets/gba_photos/little_champion2.jpeg'
+import littleChamp from '../../assets/gba_photos/little_champion2.jpg'
 import intermediate from '../../assets/gba_photos/intermediate.jpeg'
 import { NavLink } from 'react-router-dom'
 

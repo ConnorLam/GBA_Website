@@ -1,5 +1,5 @@
 import './Competition.css'
-import competition from '../../assets/gba_photos/competition2.jpeg'
+import competition from '../../assets/gba_photos/competition2.jpg'
 
 
 const Competition = () => {
