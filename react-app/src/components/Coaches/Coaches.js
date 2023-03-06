@@ -6,7 +6,7 @@ import eti from '../../assets/gba_photos/eti.jpeg'
 import kennevic from '../../assets/gba_photos/kennevic.jpeg'
 import eric from '../../assets/gba_photos/Eric.jpeg'
 import megumi from '../../assets/gba_photos/megumi.jpeg'
-import josh from '../../assets/gba_photos/josh.jpeg'
+import josh from '../../assets/gba_photos/josh2.jpeg'
 
 const Coaches = () => {
     return (
@@ -38,7 +38,7 @@ const Coaches = () => {
                             <li>Fact 3</li>
                         </ul>
                     </div>
-                    <div className='each-coach'>
+                    {/* <div className='each-coach'>
                         <h3 className='coach-name'>Coach Eric Go</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' id='eric' src={eric} alt='' loading='lazy'/>
@@ -59,7 +59,7 @@ const Coaches = () => {
                             <li>Fact 2</li>
                             <li>Fact 3</li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className='each-coach'>
                         <h3 className='coach-name'>Coach Megumi Taruno</h3>
                         <div className='coach-pic-wrapper'>
