@@ -1,5 +1,5 @@
 import './Competition.css'
-import kodi from '../../assets/gba_photos/kodi.jpg'
+import competition from '../../assets/gba_photos/competition2.jpeg'
 
 
 const Competition = () => {
@@ -15,10 +15,10 @@ const Competition = () => {
                 </div>
                 <div className='kodi-img-wrapper'>
                     <div>
-                        <img className='kodi-img'src={kodi} alt=''/>
+                        <img className='kodi-img'src={competition} alt=''/>
                     </div>
                     <div className='grey kodi-description'>
-                        Kodi Lee at the most prestigious junior tournament, the World Junior Championships.
+                        Our students representing the USA for the Junior Pan American Games.
                     </div>
                 </div>
             </div>
