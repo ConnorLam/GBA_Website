@@ -21,22 +21,22 @@ const Coaches = () => {
                         <div className='coach-pic-wrapper'>
                             <img id='tony' className='coach-pic' src={tony} alt='' loading='lazy'/>
                         </div>
-                        <ul>
+                        {/* <ul>
                             <li>Fact 1</li>
                             <li>Fact 2</li>
                             <li>Fact 3</li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className='each-coach'>
                         <h3 className='coach-name'>Coach Kennevic Asuncion</h3>
                         <div className='coach-pic-wrapper'>
-                            <img className='coach-pic' src={kennevic} alt='' loading='lazy' />
+                            <img className='coach-pic' id='kennevic' src={kennevic} alt='' loading='lazy' />
                         </div>
-                        <ul>
+                        {/* <ul>
                             <li>Fact 1</li>
                             <li>Fact 2</li>
                             <li>Fact 3</li>
-                        </ul>
+                        </ul> */}
                     </div>
                     {/* <div className='each-coach'>
                         <h3 className='coach-name'>Coach Eric Go</h3>
@@ -65,22 +65,22 @@ const Coaches = () => {
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' id='megumi' src={megumi} alt='' loading='lazy'/>
                         </div>
-                        <ul>
+                        {/* <ul>
                             <li>Fact 1</li>
                             <li>Fact 2</li>
                             <li>Fact 3</li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className='each-coach'>
                         <h3 className='coach-name'>Coach Josh Hwang</h3>
                         <div className='coach-pic-wrapper'>
                             <img className='coach-pic' src={josh} alt='' loading='lazy'/>
                         </div>
-                        <ul>
+                        {/* <ul>
                             <li>Fact 1</li>
                             <li>Fact 2</li>
                             <li>Fact 3</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
