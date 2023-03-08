@@ -33,7 +33,7 @@
     justify-content: center;
     /* border: solid 1px white; */
     margin: 0px 20px;
-    height: 250px;
+    height: 350px;
     /* height: 200px;
     width: 200px; */
 }
@@ -59,4 +59,8 @@
 
 #chris{
     object-position: 100% 0%;
+}
+
+#kennevic{
+    object-position: 100%;
 }
