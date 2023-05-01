@@ -104,20 +104,20 @@ body {
     color: black;
 } */
 
-/* .background-image{
+.background-image{
     opacity: 0.6;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
-    object-position: -20% 0%;
-    object-fit: contain;
-} */
+    /* object-position: -20% 0%;
+    object-fit: contain; */
+}
 
 .quad-header{
     display: flex;
     justify-content: center;
-    color: rgb(167, 167, 167);
+    color: yellow;
     font-weight: bolder;
 }

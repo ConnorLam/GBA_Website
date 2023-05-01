@@ -79,7 +79,7 @@ const Splash = () => {
                     <div className="quad-header">
                         Tournament Team
                     </div>
-                    {/* <img className='background-image' src={splash1} alt=""/> */}
+                    <img className='background-image' src={splash1} alt=""/>
                 </div>
             </div>
             <div className="top-bottom-quad">
