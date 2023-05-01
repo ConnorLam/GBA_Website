@@ -10,11 +10,11 @@ import splash3 from '../../assets/gba_photos/gba_splash4.jpeg'
 import tony from '../../assets/gba_photos/tony.jpeg'
 
 
-const images = [
-  splash1,
-  splash2,
-  splash3
-];
+// const images = [
+//   splash1,
+//   splash2,
+//   splash3
+// ];
 
 const Splash = () => {
 
@@ -24,15 +24,15 @@ const Splash = () => {
     const [splashNum, setSplashNum] = useState(0);
     const [isLoaded, setIsLoaded] = useState(false);
 
-    useEffect(() => {
-        const splashInterval = setInterval(() => {
-            setSplashNum((prevNum) => ++prevNum % images.length)
-        }, 5000)
+    // useEffect(() => {
+    //     const splashInterval = setInterval(() => {
+    //         setSplashNum((prevNum) => ++prevNum % images.length)
+    //     }, 5000)
 
-        return (() => {
-            clearInterval(splashInterval)
-        })
-    }, [])
+    //     return (() => {
+    //         clearInterval(splashInterval)
+    //     })
+    // }, [])
 
     return (
     //   <div
@@ -65,18 +65,37 @@ const Splash = () => {
     //         <img className='picture' src={tony} alt=''/>
     //     </div>
     // </div>
-    <div className="four-quadrants white">
-        <div className="quadrant-1">
-            Little Champions
-        </div >
-        <div className="quadrant-2">
-            Tournament Team
-        </div>
-        <div className="quadrant-3">
-            Our Coaches
-        </div>
-        <div className="quadrant-4">
-            FAQ
+    <div className="main-splash">
+
+        <div className="four-quadrants white">
+            <div className="top-bottom-quad">
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Little Champions
+                    </div>
+                    <img src="" alt=""/>
+                </div >
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Tournament Team
+                    </div>
+                    {/* <img className='background-image' src={splash1} alt=""/> */}
+                </div>
+            </div>
+            <div className="top-bottom-quad">
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Our Coaches
+                    </div>
+                    <img src="" alt=""/>
+                </div>
+                <div className="each-quad">
+                    <div className="quad-header">
+                        FAQ
+                    </div>
+                    <img src="" alt=""/>
+                </div>
+            </div>
         </div>
     </div>
     );

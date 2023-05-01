@@ -66,3 +66,58 @@ body {
 .x-large-font{
     font-size: xx-large;
 }
+
+.main-splash{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.four-quadrants{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    padding: 0% 10%;
+    /* width: 100%; */
+}
+
+.top-bottom-quad{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+
+.each-quad{
+    width: 50%;
+    padding-top: 10px;
+    border: solid 1px white;
+    font-size: large;
+    overflow: hidden;
+    position: relative;
+    /* background-image: url('../../assets/gba_photos/eti.jpeg'); */
+}
+
+/* .each-quad:hover{
+    color: black;
+} */
+
+/* .background-image{
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-position: -20% 0%;
+    object-fit: contain;
+} */
+
+.quad-header{
+    display: flex;
+    justify-content: center;
+    color: rgb(167, 167, 167);
+    font-weight: bolder;
+}
