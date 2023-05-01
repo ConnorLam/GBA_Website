@@ -47,26 +47,36 @@ const Splash = () => {
     //       <h1>Global Badminton Academy</h1>
     //     </div> */}
     //   </div>
-    <div className="splash-wrapper">
-        <div className="splash-info">
-            <div>
-                <h1>
-                    Welcome to Global Badminton Academy
-                </h1>
-            </div>
-            <div className="coach-intro">
-                Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
-                in 2010. His mission is to share his profound knowledge through intensive training 
-                and world-class competition to as many badminton coaches and students 
-                throughout the US.
-{/* 
-                <br/>
-                <br/>
-                ADD MIND BODY LINK */}
-            </div>
+    // <div className="splash-wrapper">
+    //     <div className="splash-info">
+    //         <div>
+    //             <h1>
+    //                 Welcome to Global Badminton Academy
+    //             </h1>
+    //         </div>
+    //         <div className="coach-intro">
+    //             Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
+    //             in 2010. His mission is to share his profound knowledge through intensive training 
+    //             and world-class competition to as many badminton coaches and students 
+    //             throughout the US.
+    //         </div>
+    //     </div>
+    //     <div className="splash-picture">
+    //         <img className='picture' src={tony} alt=''/>
+    //     </div>
+    // </div>
+    <div className="four-quadrants white">
+        <div className="quadrant-1">
+            Little Champions
+        </div >
+        <div className="quadrant-2">
+            Tournament Team
         </div>
-        <div className="splash-picture">
-            <img className='picture' src={tony} alt=''/>
+        <div className="quadrant-3">
+            Our Coaches
+        </div>
+        <div className="quadrant-4">
+            FAQ
         </div>
     </div>
     );
