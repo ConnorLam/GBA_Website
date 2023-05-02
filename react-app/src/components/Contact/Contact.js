@@ -24,7 +24,7 @@ const Contact = () => {
                     <form action="https://formsubmit.co/traininggba@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false"></input>
                         <input type="hidden" name="_subject" value="GBA website"></input>
-                        <input type="hidden" name="_next" value="https://globalbadmintonacademy.com/thankyou"></input>
+                        {/* <input type="hidden" name="_next" value="https://globalbadmintonacademy.com/thankyou"></input> */}
                         <input type="email" name="email" placeholder="Email Address" required></input>
                         <input type="text" name="name" placeholder='Name' required/>
                         <textarea className='message-area' type="text" name="message" placeholder='Write message here' required/>
