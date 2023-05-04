@@ -8,7 +8,9 @@ import splash1 from '../../assets/gba_photos/gba_splash.jpeg'
 import splash2 from '../../assets/gba_photos/gba_splash2.jpeg'
 import splash3 from '../../assets/gba_photos/gba_splash4.jpeg'
 import tony from '../../assets/gba_photos/tony.jpeg'
-
+import coaches from '../../assets/gba_photos/coaches.JPG'
+import tournamentteam from '../../assets/gba_photos/tournamentteam.JPG'
+import littlechampion from '../../assets/gba_photos/little_champion2.jpeg'
 
 // const images = [
 //   splash1,
@@ -47,57 +49,57 @@ const Splash = () => {
     //       <h1>Global Badminton Academy</h1>
     //     </div> */}
     //   </div>
-    <div className="splash-wrapper">
-        <div className="splash-info">
-            <div>
-                <h1>
-                    Welcome to Global Badminton Academy
-                </h1>
-            </div>
-            <div className="coach-intro">
-                Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
-                in 2010. His mission is to share his profound knowledge through intensive training 
-                and world-class competition to as many badminton coaches and students 
-                throughout the US.
-            </div>
-        </div>
-        <div className="splash-picture">
-            <img className='picture' src={tony} alt=''/>
-        </div>
-    </div>
-    // <div className="main-splash">
-
-    //     <div className="four-quadrants white">
-    //         <div className="top-bottom-quad">
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Little Champions
-    //                 </div>
-    //                 <img src="" alt=""/>
-    //             </div >
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Tournament Team
-    //                 </div>
-    //                 <img className='background-image' src={splash1} alt=""/>
-    //             </div>
+    // <div className="splash-wrapper">
+    //     <div className="splash-info">
+    //         <div>
+    //             <h1>
+    //                 Welcome to Global Badminton Academy
+    //             </h1>
     //         </div>
-    //         <div className="top-bottom-quad">
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Our Coaches
-    //                 </div>
-    //                 <img src="" alt=""/>
-    //             </div>
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     FAQ
-    //                 </div>
-    //                 <img src="" alt=""/>
-    //             </div>
+    //         <div className="coach-intro">
+    //             Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
+    //             in 2010. His mission is to share his profound knowledge through intensive training 
+    //             and world-class competition to as many badminton coaches and students 
+    //             throughout the US.
     //         </div>
     //     </div>
+    //     <div className="splash-picture">
+    //         <img className='picture' src={tony} alt=''/>
+    //     </div>
     // </div>
+    <div className="main-splash">
+
+        <div className="four-quadrants white">
+            <div className="top-bottom-quad">
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Little Champions
+                    </div>
+                    <img className="background-image" id="little-champions" src={littlechampion} alt=""/>
+                </div >
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Tournament Team
+                    </div>
+                    <img className='background-image' id="tournament-team" src={tournamentteam} alt=""/>
+                </div>
+            </div>
+            <div className="top-bottom-quad">
+                <div className="each-quad">
+                    <div className="quad-header">
+                        Our Coaches
+                    </div>
+                    <img className="background-image" id="coaches" src={coaches} alt=""/>
+                </div>
+                <div className="each-quad">
+                    <div className="quad-header">
+                        FAQ
+                    </div>
+                    <img src="" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
     );
 }
 

@@ -78,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80%;
+    height: 100%;
     padding: 0% 10%;
     /* width: 100%; */
 }
@@ -93,16 +93,18 @@ body {
 .each-quad{
     width: 50%;
     padding-top: 10px;
-    border: solid 1px white;
+    border: solid 2px white;
     font-size: large;
     overflow: hidden;
     position: relative;
     /* background-image: url('../../assets/gba_photos/eti.jpeg'); */
 }
 
-/* .each-quad:hover{
+.each-quad:hover{
     color: black;
-} */
+    /* cursor: pointer; */
+}
+
 
 .background-image{
     opacity: 0.6;
@@ -110,9 +112,17 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
-    /* object-position: -20% 0%;
-    object-fit: contain; */
+    height: 100%;
+    /* object-position: center 80%; */
+    object-fit: cover;
+}
+
+#tournament-team{
+    object-position: center 80%;
+}
+
+#coaches{
+    object-position: center 30%;
 }
 
 .quad-header{
