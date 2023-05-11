@@ -161,3 +161,11 @@ body {
     font-weight: bolder;
     /* opacity: 2.0; */
 }
+
+.slick-dots li.slick-active button:before {
+    color:White !important;
+}
+
+.slick-dots{
+    color: white;
+}

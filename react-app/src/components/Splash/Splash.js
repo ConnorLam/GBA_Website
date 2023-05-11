@@ -2,7 +2,15 @@ import React, { useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
+import Slider from "react-slick";
+
+
 import './Splash.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
 
 import splash1 from '../../assets/gba_photos/gba_splash.jpeg'
 import splash2 from '../../assets/gba_photos/gba_splash2.jpeg'
@@ -14,7 +22,12 @@ import littlechampion from '../../assets/gba_photos/little_champion2.jpeg'
 
 const images = [
   tournamentteam,
-  littlechampion
+  littlechampion,
+  splash1,
+  splash2,
+  splash3,
+  tony,
+  coaches
 ];
 
 const Splash = () => {
@@ -35,21 +48,57 @@ const Splash = () => {
         })
     }, [splashNum])
 
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+    };
+
     return (
-        <div className="splash-wrapper">
-            <div
-                id="splash"
-                className="splash-main"
-                // style={{
-                // backgroundImage: `url(${images[splashNum]})`,
-                // }}
-            >
-                <img className='rotating-image' src={images[splashNum]} alt=''/>
-                {/* <div>
-                <h1>Global Badminton Academy</h1>
-                </div> */}
-            </div>
+        <div className="main-splash">
+            <Slider {...settings}>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+                <div className="splash-info">
+                    <h1>hi</h1>
+                </div>
+            </Slider>
         </div>
+        // <div className="splash-wrapper">
+        //     <div
+        //         id="splash"
+        //         className="splash-main"
+        //         // style={{
+        //         // backgroundImage: `url(${images[splashNum]})`,
+        //         // }}
+        //     >
+        //         <img className='rotating-image' src={images[splashNum]} alt=''/>
+        //         {/* <div>
+        //         <h1>Global Badminton Academy</h1>
+        //         </div> */}
+        //     </div>
+        // </div>
     // <div className="splash-wrapper">
     //     <div className="splash-info">
     //         <div>
