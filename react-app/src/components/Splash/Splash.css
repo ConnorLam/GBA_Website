@@ -9,43 +9,6 @@ body {
     height: 100%;
 }
 
-/* #splash{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    min-width: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat, repeat;
-    height: 100vh;
-    background-size: cover;
-    transition: background-image 1s ease-in-out;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background: url(images/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
-
-.splash-main{
-    border: solid 3px red;
-    width: 100%;
-    height: 500px;
-    margin: 0% 5%;
-
-}
-
-.rotating-image{
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-    /* transition: opacity 0.5s ease-in-out; */
-    transition: 1s ease-in-out;
-}
-
 .splash-wrapper{
     display: flex;
     /* justify-content: center; */
@@ -57,9 +20,6 @@ body {
     background-color: #121212;
 }
 
-.rotating-image{
-
-}
 
 .splash-info{
     background-color: #121212;
@@ -88,84 +48,73 @@ body {
     font-size: xx-large;
 }
 
-.main-splash{
+/* .main-splash{
     height: 100vh;
     width: 100%;
     padding-top: 20px;
     margin-bottom: 50px;
-}
+} */
 
-.four-quadrants{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    padding: 0% 10%;
-    /* width: 100%; */
-}
-
-.top-bottom-quad{
-    display: flex;
-    flex-direction: row;
-    height: 50%;
-    width: 100%;
-}
-
-.each-quad{
-    width: 50%;
-    padding-top: 10px;
-    border: solid 2px white;
-    font-size: large;
-    overflow: hidden;
-    position: relative;
-    /* background-image: url('../../assets/gba_photos/eti.jpeg'); */
-}
-
-.each-quad:hover{
-    color: black;
-    /* cursor: pointer; */
-}
-
-
-.background-image{
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* object-position: center 80%; */
-    object-fit: cover;
-}
-
-.background-image:hover{
-    opacity: 1.0;
-}
-
-#tournament-team{
-    object-position: center 80%;
-}
-
-#coaches{
-    object-position: center 30%;
-}
-
-#little-champions{
-    object-position: center 100%;
-}
-
-.quad-header{
-    display: flex;
-    justify-content: center;
-    color: yellow;
-    font-weight: bolder;
-    /* opacity: 2.0; */
-}
 
 .slick-dots li.slick-active button:before {
     color:White !important;
 }
 
+.slick-dots li button::before {
+    color: white !important;
+    opacity: 0.9;
+  }
+
 .slick-dots{
+    color: wheat;
+}
+
+/* .card{
+    border: solid 1px white;
+    border-radius: 8px;
+    overflow: hidden;
+} */
+.main-splash {
+    /* overflow: hidden; */
+    padding: 10px 40px;
     color: white;
 }
+
+
+/* .slick-slide > div {
+  margin: 0 10px;
+} */
+/* .slick-list {
+  margin: 0 -10px;
+} */
+
+.card {
+  /* border: 1px solid #fff; */
+  /* background: black; */
+  border-radius: 8px;
+  /* overflow: hidden; */
+  /* width: 90%; */
+  height: 400px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .card-top h1 {
+  font-size: 0.9rem;
+  margin: 20px;
+} */
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: rgb(40, 40, 40);
+  /* border: 1px solid #fff; */
+}
+
+
+.splash-header{
+    text-align: center;
+}
+
+/* .slick-initialized { overflow: hidden; } */

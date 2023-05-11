@@ -51,105 +51,53 @@ const Splash = () => {
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 3,
+      speed: 500,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      autoplaySpedd: 2000,
       cssEase: "linear",
     };
 
+
     return (
         <div className="main-splash">
+            {/* <div className="carousel"> */}
+            <h1 className="splash-header">Welcome to Global Badminton Academy</h1>
             <Slider {...settings}>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
-                <div className="splash-info">
-                    <h1>hi</h1>
-                </div>
+                {images.map(image => (
+                    // console.log(image)
+                    <div className="card" style={{width: '80%'}}>
+                        <img src={image} alt=''/>
+                    </div>
+                ))}
             </Slider>
-        </div>
-        // <div className="splash-wrapper">
-        //     <div
-        //         id="splash"
-        //         className="splash-main"
-        //         // style={{
-        //         // backgroundImage: `url(${images[splashNum]})`,
-        //         // }}
-        //     >
-        //         <img className='rotating-image' src={images[splashNum]} alt=''/>
-        //         {/* <div>
-        //         <h1>Global Badminton Academy</h1>
-        //         </div> */}
-        //     </div>
-        // </div>
-    // <div className="splash-wrapper">
-    //     <div className="splash-info">
-    //         <div>
-    //             <h1>
-    //                 Welcome to Global Badminton Academy
-    //             </h1>
-    //         </div>
-    //         <div className="coach-intro">
-    //             Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
-    //             in 2010. His mission is to share his profound knowledge through intensive training 
-    //             and world-class competition to as many badminton coaches and students 
-    //             throughout the US.
-    //         </div>
-    //     </div>
-    //     <div className="splash-picture">
-    //         <img className='picture' src={tony} alt=''/>
-    //     </div>
-    // </div>
-    // <div className="main-splash">
+            <div>
+                <h4>What is our mission?</h4>
 
-    //     <div className="four-quadrants white">
-    //         <div className="top-bottom-quad">
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Little Champions
-    //                 </div>
-    //                 <img className="background-image" id="little-champions" src={littlechampion} alt=""/>
-    //             </div >
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Tournament Team
-    //                 </div>
-    //                 <img className='background-image' id="tournament-team" src={tournamentteam} alt=""/>
-    //             </div>
-    //         </div>
-    //         <div className="top-bottom-quad">
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     Our Coaches
-    //                 </div>
-    //                 <img className="background-image" id="coaches" src={coaches} alt=""/>
-    //             </div>
-    //             <div className="each-quad">
-    //                 <div className="quad-header">
-    //                     FAQ
-    //                 </div>
-    //                 <img src="" alt=""/>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
+            </div>
+
+            {/* <div className="splash-wrapper">
+                <div className="splash-info">
+                    <div>
+                        <h1>
+                            Welcome to Global Badminton Academy
+                        </h1>
+                    </div>
+                    <div className="coach-intro">
+                        Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
+                        in 2010. His mission is to share his profound knowledge through intensive training 
+                        and world-class competition to as many badminton coaches and students 
+                        throughout the US.
+                    </div>
+                </div>
+                <div className="splash-picture">
+                    <img className='picture' src={tony} alt=''/>
+                </div>
+            </div> */}
+            {/* </div> */}
+
+        </div>
     );
 }
 
