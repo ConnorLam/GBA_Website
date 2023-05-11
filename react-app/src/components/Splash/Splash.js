@@ -32,26 +32,10 @@ const images = [
 
 const Splash = () => {
 
-    const dispatch = useDispatch();
-    const history = useHistory();
-
-    const [splashNum, setSplashNum] = useState(0);
-    const [isLoaded, setIsLoaded] = useState(false);
-
-    useEffect(() => {
-        const splashInterval = setInterval(() => {
-            setSplashNum((splashNum + 1) % images.length)
-        }, 5000)
-
-        return (() => {
-            clearInterval(splashInterval)
-        })
-    }, [splashNum])
-
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 800,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -62,20 +46,40 @@ const Splash = () => {
 
     return (
         <div className="main-splash">
-            {/* <div className="carousel"> */}
-            <h1 className="splash-header">Welcome to Global Badminton Academy</h1>
-            <Slider {...settings}>
-                {images.map(image => (
-                    // console.log(image)
-                    <div className="card" style={{width: '80%'}}>
-                        <img src={image} alt=''/>
-                    </div>
-                ))}
-            </Slider>
-            <div>
-                <h4>What is our mission?</h4>
-
+            {/* <h1 className="splash-header">Welcome to Global Badminton Academy</h1> */}
+            <div className="image-carousel">
+                <Slider {...settings}>
+                    {images.map(image => (
+                        <div className="card" style={{width: '80%'}}>
+                            <img src={image} alt=''/>
+                        </div>
+                    ))}
+                </Slider>
             </div>
+            <section id="about-section">
+                <div className="container">
+                    <h3>About</h3>
+                    <div className="splash-wrapper">
+                        <div className="about-picture">
+                            <img className='picture' src={tony} alt=''/>
+                        </div>
+                        <div className="about-info">
+                            <div className="coach-intro">
+                                Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
+                                in 2010. His mission is to share his profound knowledge through intensive training 
+                                and world-class competition to as many badminton coaches and students 
+                                throughout the US.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-section">
+                <div className="container" id="learn">
+                    <h3>What you will learn</h3>
+                    
+                </div>
+            </section>
 
             {/* <div className="splash-wrapper">
                 <div className="splash-info">

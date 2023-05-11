@@ -39,7 +39,7 @@ const NavBar = () => {
   }
 
   return (
-    <>
+    <div className='navbar'>
       <nav className='whole-nav' id={location.pathname === '/login' || location.pathname === '/sign-up' ? 'border' : null}>
         <div className='home-button'>
             <NavLink to='/' exact={true} activeClassName='active' className='navlink'>
@@ -64,7 +64,7 @@ const NavBar = () => {
         <NavLink to='/updates' activeClassName='active' className='navlink login-signup-link'>Updates</NavLink>
         <NavLink to='/contact' activeClassName='active' className='navlink login-signup-link'>Contact Us</NavLink>
       </div>
-    </>
+    </div>
   );
 }
 
