@@ -1,20 +1,20 @@
 .main-splash {
     /* overflow: hidden; */
-    padding: 10px 40px;
+    padding: 10px 0px;
     color: white;
     padding-bottom: 60px;
 }
 
 .container {
-    padding: 60px 60px;
-    padding-bottom: 0px;
+    padding: 0px 60px;
+    padding-bottom: 30px;
 }
 
 /* ***************** Carousel ********************* */
 
-/* .image-carousel{
-    padding-bottom: 60px;
-} */
+.image-carousel{
+    padding: 0px 40px;
+}
 
 .slick-dots li.slick-active button:before {
     color:White !important;
@@ -79,7 +79,7 @@
 
 .picture{
     height: 100%;
-    width: 300px;
+    width: 250px;
     object-fit: contain;
     object-position: 100% 0%;
 }
@@ -99,4 +99,27 @@
     /* padding: 0px;
     padding-top: 60px; */
     /* background: rgb(40, 40, 40); */
+}
+
+#learn-section{
+    background: rgb(40, 40, 40);
+    padding-top: 10px;
+}
+
+.reasons-to-learn-header{
+    text-align: center;
+}
+
+.learn-growth{
+    /* font-size: x-large; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.reasons-learn{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    /* padding: 20px 0;
+    font-size: 30px; */
 }

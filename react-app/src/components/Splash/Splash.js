@@ -45,43 +45,99 @@ const Splash = () => {
 
 
     return (
-        <div className="main-splash">
-            {/* <h1 className="splash-header">Welcome to Global Badminton Academy</h1> */}
-            <div className="image-carousel">
-                <Slider {...settings}>
-                    {images.map(image => (
-                        <div className="card" style={{width: '80%'}}>
-                            <img src={image} alt=''/>
-                        </div>
-                    ))}
-                </Slider>
+      <div className="main-splash">
+        {/* <h1 className="splash-header">Welcome to Global Badminton Academy</h1> */}
+        <div className="image-carousel">
+          <Slider {...settings}>
+            {images.map((image) => (
+              <div className="card" style={{ width: "80%" }}>
+                <img src={image} alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <section id="about-section">
+          <div className="container">
+            <h2>About Us</h2>
+            <div className="splash-wrapper">
+              <div className="about-picture">
+                <img className="picture" src={tony} alt="" />
+              </div>
+              <div className="about-info">
+                <div className="coach-intro">
+                  Tony Gunawan,{" "}
+                  <span className="x-large-font">Olympic Gold Medalist</span>,
+                  founded Global Badminton Academy in 2010. His mission is to
+                  share his profound knowledge through intensive training and
+                  world-class competition to as many badminton coaches and
+                  students throughout the US.
+                </div>
+              </div>
             </div>
-            <section id="about-section">
-                <div className="container">
-                    <h3>About</h3>
-                    <div className="splash-wrapper">
-                        <div className="about-picture">
-                            <img className='picture' src={tony} alt=''/>
-                        </div>
-                        <div className="about-info">
-                            <div className="coach-intro">
-                                Tony Gunawan, <span className="x-large-font">Olympic Gold Medalist</span>, founded Global Badminton Academy 
-                                in 2010. His mission is to share his profound knowledge through intensive training 
-                                and world-class competition to as many badminton coaches and students 
-                                throughout the US.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="about-section">
-                <div className="container" id="learn">
-                    <h3>What you will learn</h3>
-                    
-                </div>
-            </section>
+          </div>
+        </section>
+        <section id="learn-section">
+          <div className="container" id="learn">
+            <h2 className="reasons-to-learn-header">
+              Reasons Why You Should Play Badminton
+            </h2>
+            <div className="learn-growth">
+              <div className="reasons-learn">
+                <h3>Important Life Lessons</h3>
+                <p>
+                  Although badminton is just a sport there are many life lessons
+                  that you will learn such as developing a work ethic, accept
+                  responsibility, learn to compete, work under pressure, and
+                  learning how to work with a team.
+                </p>
+              </div>
+              <div className="reasons-learn">
+                <h3>Health</h3>
+                <p>
+                  Badminton is a great all around sport that consists of whole
+                  body movements such as running, jumping, and swinging.
+                  Badminton will not only help with strength but with our heart
+                  function.
+                </p>
+              </div>
+              <div className="reasons-learn">
+                <h3>Social</h3>
+                <p>
+                  Training, tournaments, or just playing for fun badminton is a
+                  great sport for you to make friends. The badminton court is a
+                  safe space for you to socialize with other people that enjoy
+                  the sport.
+                </p>
+              </div>
+              <div className="reasons-learn">
+                <h3>Minimal Injuries</h3>
+                <p>
+                  Badminton is a low-impact sport, which also makes it
+                  safe for your children. There is no hitting, pushing, or any
+                  type of contact with other players aside from your partners.
+                </p>
+              </div>
+              <div className="reasons-learn">
+                <h3>Improves Motor Skills</h3>
+                <p>
+                    Badminton will help in devloping better balance and coordination. Recognized
+                    as one of the fastest sports in the world, you will have to be alert and vigilant at all times
+                    while playing badminton
+                </p>
+              </div>
+              <div className="reasons-learn">
+                <h3>Mental Resilience</h3>
+                <p>
+                    Playing badminton, you will be put into high pressure situations where you have to
+                    learn how to deal with frustrations and not dwell on the past. Badminton can also 
+                    act as a healthy stress reliever.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            {/* <div className="splash-wrapper">
+        {/* <div className="splash-wrapper">
                 <div className="splash-info">
                     <div>
                         <h1>
@@ -99,9 +155,8 @@ const Splash = () => {
                     <img className='picture' src={tony} alt=''/>
                 </div>
             </div> */}
-            {/* </div> */}
-
-        </div>
+        {/* </div> */}
+      </div>
     );
 }
 
