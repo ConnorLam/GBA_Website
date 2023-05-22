@@ -57,8 +57,8 @@ const Splash = () => {
           </Slider>
         </div>
         <section id="about-section">
-          <div className="container">
-            <h2>About Us</h2>
+          <div className="container" id="about-container">
+            <h2 className="container-header">About Us</h2>
             <div className="splash-wrapper">
               <div className="about-picture">
                 <img className="picture" src={tony} alt="" />
@@ -78,13 +78,13 @@ const Splash = () => {
         </section>
         <section id="learn-section">
           <div className="container" id="learn">
-            <h2 className="reasons-to-learn-header">
+            <h2 className="container-header reason-color">
               Reasons Why You Should Play Badminton
             </h2>
             <div className="learn-growth">
               <div className="reasons-learn">
-                <h3>Important Life Lessons</h3>
-                <p>
+                <h3 className='reason-learn-header'>Important Life Lessons</h3>
+                <p className='reason-learn-p'>
                   Although badminton is just a sport there are many life lessons
                   that you will learn such as developing a work ethic, accept
                   responsibility, learn to compete, work under pressure, and
@@ -92,8 +92,8 @@ const Splash = () => {
                 </p>
               </div>
               <div className="reasons-learn">
-                <h3>Health</h3>
-                <p>
+                <h3 className='reason-learn-header'>Health</h3>
+                <p className='reason-learn-p'>
                   Badminton is a great all around sport that consists of whole
                   body movements such as running, jumping, and swinging.
                   Badminton will not only help with strength but with our heart
@@ -101,8 +101,8 @@ const Splash = () => {
                 </p>
               </div>
               <div className="reasons-learn">
-                <h3>Social</h3>
-                <p>
+                <h3 className='reason-learn-header'>Social</h3>
+                <p className='reason-learn-p'>
                   Training, tournaments, or just playing for fun badminton is a
                   great sport for you to make friends. The badminton court is a
                   safe space for you to socialize with other people that enjoy
@@ -110,24 +110,24 @@ const Splash = () => {
                 </p>
               </div>
               <div className="reasons-learn">
-                <h3>Minimal Injuries</h3>
-                <p>
+                <h3 className='reason-learn-header'>Minimal Injuries</h3>
+                <p className='reason-learn-p'>
                   Badminton is a low-impact sport, which also makes it
                   safe for your children. There is no hitting, pushing, or any
                   type of contact with other players aside from your partners.
                 </p>
               </div>
               <div className="reasons-learn">
-                <h3>Improves Motor Skills</h3>
-                <p>
+                <h3 className='reason-learn-header'>Improves Motor Skills</h3>
+                <p className='reason-learn-p'>
                     Badminton will help in devloping better balance and coordination. Recognized
                     as one of the fastest sports in the world, you will have to be alert and vigilant at all times
                     while playing badminton
                 </p>
               </div>
               <div className="reasons-learn">
-                <h3>Mental Resilience</h3>
-                <p>
+                <h3 className='reason-learn-header'>Mental Resilience</h3>
+                <p className='reason-learn-p'>
                     Playing badminton, you will be put into high pressure situations where you have to
                     learn how to deal with frustrations and not dwell on the past. Badminton can also 
                     act as a healthy stress reliever.
@@ -135,6 +135,12 @@ const Splash = () => {
               </div>
             </div>
           </div>
+        </section>
+        <section className="why-gba-section">
+            <div className="container">
+                <h2 className="container-header">Why GBA</h2>
+
+            </div>
         </section>
 
         {/* <div className="splash-wrapper">
