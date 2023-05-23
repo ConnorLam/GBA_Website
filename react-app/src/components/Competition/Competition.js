@@ -16,7 +16,7 @@ const Competition = () => {
                 </div>
                 <div className='kodi-img-wrapper'>
                     <div>
-                        <img className='kodi-img'src={competition} alt=''/>
+                        <img className='kodi-img'src={competition} alt='' loading='lazy'/>
                     </div>
                     <div className='grey kodi-description'>
                         Coach Kennevic working with our Tournament Team players

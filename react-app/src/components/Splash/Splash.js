@@ -151,12 +151,12 @@ const Splash = () => {
             </div>
           </div>
         </section>
-        {/* <section className="why-gba-section">
+        <section className="question-section">
             <div className="container">
-                <h2 className="container-header">Why GBA</h2>
+                <h2 className="container-header">Have questions? <NavLink to='/contact' className='navlink-blue'>Contact Us!</NavLink></h2>
 
             </div>
-        </section> */}
+        </section>
 
         {/* <div className="splash-wrapper">
                 <div className="splash-info">
