@@ -1,5 +1,6 @@
 import './Competition.css'
-import competition from '../../assets/gba_photos/competition2.jpg'
+// import competition from '../../assets/gba_photos/competition2.jpg'
+import competition from '../../assets/gba_photos/Vic1-2.jpg'
 
 
 const Competition = () => {
@@ -15,10 +16,10 @@ const Competition = () => {
                 </div>
                 <div className='kodi-img-wrapper'>
                     <div>
-                        <img className='kodi-img'src={competition} alt=''/>
+                        <img className='kodi-img'src={competition} alt='' loading='lazy'/>
                     </div>
                     <div className='grey kodi-description'>
-                        Our students representing the USA for the Junior Pan American Games.
+                        Coach Kennevic working with our Tournament Team players
                     </div>
                 </div>
             </div>

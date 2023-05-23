@@ -39,7 +39,7 @@ const NavBar = () => {
   }
 
   return (
-    <>
+    <div className='navbar'>
       <nav className='whole-nav' id={location.pathname === '/login' || location.pathname === '/sign-up' ? 'border' : null}>
         <div className='home-button'>
             <NavLink to='/' exact={true} activeClassName='active' className='navlink'>
@@ -60,11 +60,11 @@ const NavBar = () => {
         <NavLink to='/camp' activeClassName='active' className='navlink login-signup-link'>Camp</NavLink>
         <NavLink to='/competition' activeClassName='active' className='navlink login-signup-link'>Competition</NavLink>
         <NavLink to='/coaches' activeClassName='active' className='navlink login-signup-link'>Coaches</NavLink>
-        <NavLink to='/gallery' activeClassName='active' className='navlink login-signup-link'>Photos</NavLink>
+        {/* <NavLink to='/gallery' activeClassName='active' className='navlink login-signup-link'>Photos</NavLink> */}
         <NavLink to='/updates' activeClassName='active' className='navlink login-signup-link'>Updates</NavLink>
         <NavLink to='/contact' activeClassName='active' className='navlink login-signup-link'>Contact Us</NavLink>
       </div>
-    </>
+    </div>
   );
 }
 
