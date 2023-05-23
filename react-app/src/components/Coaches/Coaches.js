@@ -5,7 +5,7 @@ import tony from '../../assets/gba_photos/tony.jpeg'
 import eti from '../../assets/gba_photos/eti.jpeg'
 import kennevic from '../../assets/gba_photos/kennevic.jpeg'
 import eric from '../../assets/gba_photos/Eric.jpeg'
-import megumi from '../../assets/gba_photos/megumi.jpeg'
+import megumi from '../../assets/gba_photos/Megumi2.jpg'
 import josh from '../../assets/gba_photos/josh2.jpg'
 
 const Coaches = () => {

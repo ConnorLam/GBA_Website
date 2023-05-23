@@ -99,6 +99,15 @@
     line-height: 1.5;
 }
 
+.tony-accolades{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    font-size:medium;
+    color: rgb(153, 152, 152);
+}
+
 .x-large-font{
     font-size: xx-large;
 }
