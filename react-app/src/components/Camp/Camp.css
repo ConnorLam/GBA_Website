@@ -4,10 +4,22 @@
     text-align: center;
     padding-top: 20px;
     margin-bottom: 30px;
-    font-size: x-large;
+    font-size: large;
 }
 
 .camp-img-wrap{
     display: flex;
     justify-content: center;
+}
+
+.jotform-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jotform{
+    width: 900px;
+    height: 500px;
+    /* left: 100px; */
 }
