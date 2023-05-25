@@ -4,9 +4,9 @@
     height: 75px;
     box-sizing: border-box;
     align-items: center;
-    padding: 0% 5%;
+    padding: 20px 5%;
     background-color: #121212;
-    /* border-bottom: solid 1px #373636; */
+    border-bottom: solid 2px #373636;
 }
 
 .navbar{
@@ -22,6 +22,7 @@
     font-size: 25px;
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .burger {
@@ -130,9 +131,9 @@
 
 .home-button-div {
     display: flex;
-    color: white;
+    /* color: white; */
     align-items: center;
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 
 .favicon-home {
@@ -143,12 +144,6 @@
     margin-right: 10px;
 }
 
-
-.nav-right {
-    display: flex;
-    align-items: center;
-}
-
 .whole-bottom-nav{
     display: flex;
     justify-content: space-between;
@@ -157,7 +152,7 @@
     align-items: center;
     padding: 0% 15%;
     background-color: #121212;
-    border-bottom: solid 2px #373636;
+    /* border-bottom: solid 2px #373636; */
 }
 
 #display-none{
@@ -166,4 +161,11 @@
 
 #border{
     border-bottom: solid 1px #373636;
+}
+
+.gba-logo{
+    /* background-color: #121212; */
+    width: 150px;
+    padding-top: 15px;
+    /* color: #121212; */
 }
