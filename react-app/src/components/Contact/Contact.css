@@ -10,7 +10,7 @@
 .questions-contact {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-bottom: 40px;
 }
 

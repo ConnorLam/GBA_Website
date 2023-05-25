@@ -1,7 +1,7 @@
 .whole-nav {
     display: flex;
     justify-content: space-between;
-    height: 75px;
+    height: 100px;
     box-sizing: border-box;
     align-items: center;
     padding: 20px 5%;
