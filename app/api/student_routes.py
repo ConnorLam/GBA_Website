@@ -19,12 +19,13 @@ def get_all_students():
 @login_required
 def get_student_by_id(id):
     student = Student.query.get(id)
-    
+
     if not student:
         return {"message": "Student could not be found", "statusCode": 404}, 404
-    
 
-    
+    # group_name = student.group.name
+    # print('\n\n\n', group_name, '\n\n\n')
+
     return student.to_dict()
 
 @student_routes.route('', methods=['POST'])
@@ -78,6 +79,7 @@ def edit_student(id):
     return {"errors": validation_errors_to_error_messages(form.errors)}, 401
 
 @student_routes.route('<int:id>', methods=['DELETE'])
+@login_required
 def delete_student(id):
     student = Student.query.get(id)
 

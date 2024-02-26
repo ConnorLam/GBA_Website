@@ -12,7 +12,7 @@ class Group(db.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "name": self.name
+            "name": self.name,
         }
 
 #still have to create relationships for group and student
