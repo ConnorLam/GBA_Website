@@ -9,7 +9,7 @@ class Student(db.Model):
     email = db.Column(db.String(100), nullable=False)
     parent_name = db.Column(db.String(100), nullable=False)
     parent_email = db.Column(db.String(100), nullable=False)
-    group = db.Column(db.String(100), nullable=False)
+    group_id = db.Column(db.Integer, db.ForeignKey("groups.id"))
 
     def to_dict(self):
         return {
