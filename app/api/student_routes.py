@@ -15,6 +15,18 @@ def get_all_students():
         'students': [student.to_dict() for student in students]
     }
 
+@student_routes.route('<int:id>')
+@login_required
+def get_student_by_id(id):
+    student = Student.query.get(id)
+    
+    if not student:
+        return {"message": "Student could not be found", "statusCode": 404}, 404
+    
+
+    
+    return student.to_dict()
+
 @student_routes.route('', methods=['POST'])
 @login_required
 def create_student():
