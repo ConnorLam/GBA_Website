@@ -15,5 +15,12 @@ class Group(db.Model):
             "name": self.name,
         }
 
-#still have to create relationships for group and student
+    def to_dict_with_students(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "students": [student.to_dict() for student in self.students]
+        }
+
+# still have to create relationships for group and student
 # one student to a group, but a group can have mant students
