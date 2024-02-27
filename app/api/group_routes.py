@@ -90,3 +90,5 @@ def edit_group(id):
         return group.to_dict()
 
     return {"errors": validation_errors_to_error_messages(form.errors)}, 401
+
+# next route is going to be add students to group

@@ -20,5 +20,5 @@ class Student(db.Model):
             'parentName': self.parent_name,
             'parentEmail': self.parent_email,
             'groupId': self.group_id,
-            # 'groupName': self.group.name
+            'groupName': self.group.name
         }
