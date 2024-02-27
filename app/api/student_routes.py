@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from flask_login import login_required, current_user
-from app.models import User, Student, db
+from app.models import User, Student, db, Group
 from app.forms.student_form import CreateStudentForm
 from.auth_routes import validation_errors_to_error_messages
 
@@ -64,13 +64,16 @@ def edit_student(id):
     form = CreateStudentForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
 
+    if not Group.query.get(form.groupId.data):
+        return {"message": "Group does not exist", "statusCode": 404}, 404
+
     if form.validate_on_submit():
         student.first_name = form.firstName.data
         student.last_name = form.lastName.data
         student.email = form.email.data
         student.parent_name = form.parentName.data
         student.parent_email = form.parentEmail.data
-        student.group = form.group.data
+        student.group_id = form.groupId.data
 
         db.session.commit()
 

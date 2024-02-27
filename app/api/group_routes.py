@@ -33,7 +33,7 @@ def get_group_by_id(id):
         return {"message": "Group could not be found", "statusCode": 404}, 404
 
     return {
-        "groups": group.to_dict()
+        "groups": group.to_dict_with_students()
     }
 
 @group_routes.route('<int:id>', methods=['DELETE'])

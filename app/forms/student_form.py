@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, BooleanField
+from wtforms import StringField, BooleanField, IntegerField
 from wtforms.validators import DataRequired, Email, ValidationError
 
 class CreateStudentForm(FlaskForm):
@@ -12,4 +12,4 @@ class CreateStudentForm(FlaskForm):
     email = StringField("email", validators=[DataRequired()])
     parentName = StringField('Parent Name', validators=[DataRequired("Last Name is required")])
     parentEmail = StringField("email", validators=[DataRequired()])
-    group = StringField('group', )
+    groupId = IntegerField('group', )
